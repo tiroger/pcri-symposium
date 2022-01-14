@@ -818,7 +818,7 @@ fieldset[disabled] .btn {
   top: 38px;
   bottom: 0;
   width: 4px;
-  height: 96%;
+  height: 100%;
   background: #efefef;
 }
 .column-1:after {
@@ -882,7 +882,7 @@ fieldset[disabled] .btn {
   background: #dddddd;
   color: #777777;
   border-radius: 0px;
-  padding: 7px 5px;
+  padding: 6px 4px;
   width: 120px;
   display: block;
   text-align: center;
@@ -905,8 +905,8 @@ fieldset[disabled] .btn {
 }
 .board .member {
   background: #efefef;
-  padding: 34px 30px;
-  margin-bottom: 42px;
+  padding: 28px 27px;
+  margin-bottom: 36px;
 }
 .board .member h4 {
   font-size: 20px;
@@ -2315,3 +2315,23 @@ blockquote .quote-text {
   font-weight: 400;
 }
 
+.welcomeEvent {
+  font-size: 1em;
+  font-weight: bolder;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-weight: 700;
+}
+
+#mainTitle{
+  font-family: 'Open Sans', sans-serif;
+  color: #2d2d2d;
+  font-size: 42px;
+  line-height: 42px;
+  font-weight: bolder;
+}
+
+#special{
+  font-weight: lighter;
+  font-size: 36px
+}

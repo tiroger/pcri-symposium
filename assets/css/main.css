@@ -11,7 +11,7 @@ body {
   font-weight: 400;
   color: #777777;
   margin: 0;
-  line-height: 25px;
+  line-height: 25.8px;
   background: #fff;
   -webkit-box-sizing: box-sizing;
   -moz-box-sizing: box-sizing;
@@ -2347,7 +2347,7 @@ blockquote .quote-text {
   /* color: #fff; */
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
-  /* font-weight: 300; */
+  font-weight: 600;
   /* margin-bottom: 0px; */
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -2409,6 +2409,5 @@ blockquote .quote-text {
 }
 
 #fittext{
-  margin-right: 0px;
-  margin-left: 0px;
+padding-right: 20px;
 }

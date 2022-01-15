@@ -2344,10 +2344,10 @@ blockquote .quote-text {
 .btnN {
   /* padding: 10px 10px; */
   /* border-radius: 50px; */
-  color: #fff;
+  /* color: #fff; */
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  /* font-weight: 300; */
   /* margin-bottom: 0px; */
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -2356,10 +2356,59 @@ blockquote .quote-text {
 }
 
 .btnN-primary {
-  color: rgb(255, 255, 255);
-  background-color: rgb(8, 73, 163);
-  border-color: rgb(8, 73, 163);
+  color: #777777;
+  background: #fff;
+  box-shadow: 0px 2px 4px rgb(0 0 0 / 20%);
+  /* color: rgb(255, 255, 255); */
+  /* background-color: rgb(8, 73, 163); */
+  /* border-color: rgb(8, 73, 163); */
   margin-bottom: 6px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+  border: none;
+}
+
+#bio:focus {
+  outline: none;
+}
+
+.btnN-primary:hover {
+  color: #0849A3;
+}
+
+
+#no_twitter:hover{
+  color: #777777;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+#fittext{
+  margin-right: 0px;
+  margin-left: 0px;
 }

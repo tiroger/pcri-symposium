@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
     <!-- Fonts -->
     <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <!-- Icon -->
     <link rel="stylesheet" type="text/css" href="assets/fonts/simple-line-icons.css"> 
     <!-- Slicknav -->
@@ -28,6 +29,7 @@
     
     <!-- Color CSS Styles  -->
     <link rel="stylesheet" type="text/css" href="assets/css/colors/default.css" media="screen" /> 
+    
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -96,8 +98,8 @@
           </div><!-- /container -->
 
           <!-- Mobile Menu Start -->
-          <ul class="wpb-mobile-menu">
-            <li class="active"><a href="index.html">Home</a></li>
+          <!-- <ul class="wpb-mobile-menu">
+            <li class="active"><a href="index.html">Home</a></li> -->
 <!--            <li><a href="#">Pages</a>-->
 <!--               <ul class="dropdown">-->
 <!--                <li><a href="about.html">About Us</a></li>-->
@@ -112,7 +114,7 @@
 <!--            &lt;!&ndash; <li><a href="blog.html">Blog</a></li>              &ndash;&gt;-->
 <!--            <li><a href="pricing.html">Register</a></li>                -->
             <!-- <li><a href="contact.html">Contact</a></li>  -->
-           </ul>
+           <!-- </ul> -->
           <!-- Mobile Menu End -->
 
         </nav>
@@ -311,6 +313,68 @@
 <!--    </section>-->
     <!-- Featured Section End -->
 
+    <!-- Panelists Modal Start -->
+    <div class="modal fade" id="session2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Session 2</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="session3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Session 3</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="session4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Session 4</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+                
+
+    <!-- Panelists Modal end -->
+
     <!-- Schedule Section Start -->
     <section id="schedule" class="section">
       <div class="container" id="eventSchedule">
@@ -329,6 +393,7 @@
 <!--                  <li role="presentation"><a href="#day4" aria-controls="day4" role="tab" data-toggle="tab">28 JAN <br> <span>DAY 04</span></a></li>-->
                 </ul>
 
+
                 <!-- Tab content Start -->
                 <div class="tab-content">
                   <!-- Day 1 Start -->
@@ -339,11 +404,11 @@
                           <ul class="nav nav-pills event-time-list">
                             <li><a href="#">Time</a>
                               <ul>
-                                <li class="color-5"><a href="#">9:45am - 10am</a></li>
-                                <li class="color-1"><a href="#">10am - 11:30am</a></li>
-                                <li class="color-2"><a href="#">11:45am - 1pm</a></li>
-                                <li class="color-3"><a href="#">2pm - 3:15pm</a></li>
-                                <li class="color-4"><a href="#">3:45pm - 5pm</a></li>
+                                <li class="color-5 timefont"><a href="#">9:45 - 10 AM</a></li>
+                                <li class="color-1 timefont"><a href="#">10 - 11:30 AM</a></li>
+                                <li class="color-2 timefont"><a href="#">11:45 - 1 PM</a></li>
+                                <li class="color-3 timefont"><a href="#">2 - 3:15 PM</a></li>
+                                <li class="color-4 timefont"><a href="#">3:45 - 5 PM</a></li>
                               </ul>
                             </li>
                           </ul>
@@ -358,32 +423,37 @@
                               should be trusted, how to ensure its objectivity and quality, and how to promote trust in science.</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
-                            <button type="botton" class="btnN btnN-primary" href="Sesion Link">Keynote Zoom Link</botton>
+                            <button type="botton" class="btnN btnN-primary" href="Sesion Link">Zoom Link</botton>
 
 
                           </div>                            
                           <div class="member jeson">      
                           <div class="button">
                             <a href="#speakers" class="btn-large bg-2"><img src="assets/img/round-table.png" alt="" width="auto">Jeannette Wing</a>
-                          </div>                        
+                          </div>
                             <h4>Session 2 <br>Diversity, Equity and Trust in Science </h4>
                             <p>This multidisciplinary panel will discuss the role of diversity and equity in promoting trust and credibility of science, including,
                               for example, addressing bias in artificial intelligence, genomic research as a case study, diversity in clinical trial recruitment,
                               and strategies to promote diversity across the research enterprise. </p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
-                            
-                            <button type="botton" class="btnN btnN-primary" href="Sesion Link">Session 2 Zoom Link</botton>
+                            <button type="button" class="btnN btnN-primary" data-toggle="modal" data-target="#session2">
+                              Panelists
+                            </button>
+                            <button type="botton" class="btnN btnN-primary" href="Sesion Link">Zoom Link</botton>
                           </div>
                         </div>
                         <div class="col-md-1 col-sm-1">
                           <div class="coffee">
                             <div class="coffee-icon">
-                              <img src="assets/img/coffee-cup.png" alt="">
+                              <img src="assets/img/lunch.png" alt="" width="30px">
                             </div>
                             <p>
-                              <br>C <br> O <br> F <br> F <br>E <br>E <br> <br><br> A <br> N <br> D <br> <br><br> L <br> U <br> N <br>C <br>H <br><br> <br> B <br> R <br> E <br> A <br> K
+                              <br> L <br> U <br> N <br>C <br>H<br><br> A <br> N <br> D <br><br>C <br> O <br> F <br> F <br>E <br>E <br> <br> B <br> R <br> E <br> A <br> K <br><br>
                             </p>
+                            <div class="coffee-icon">
+                              <img src="assets/img/coffee-cup.png" alt="" width="30px">
+                            </div>
                           </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
@@ -393,9 +463,12 @@
                             </div>
                             <h4>Session 3 <br>Rigor and Research Integrity in a Public Health Crisis</h4>
                             <p>A panel including researchers, journal editors, and public health leaders will discuss recent experiences and lessons learned
-                              in promoting rigorous COVID-19 research during the pandemic.</p>
-                            <p>&nbsp;</p>
-                            <button type="botton" class="btnN btnN-primary" href="Sesion Link">Session 3 Zoom Link</botton>
+                              in promoting rigorous COVID-19 research during the pandemic.</p><br>
+                              <p>&nbsp;</p>
+                              <button type="button" class="btnN btnN-primary" data-toggle="modal" data-target="#session3">
+                                Panelists
+                              </button>
+                            <button type="botton" class="btnN btnN-primary" href="Sesion Link">Zoom Link</botton>
                           </div>
                           <div class="member jeson">
                             <div class="button">
@@ -405,7 +478,10 @@
                             <p>In this session, panelists will discuss what constitutes effective science communication, how such communication promotes
                               trust in science and how it can prompt action on the issues of the day. Panelists will also provide approaches that researchers
                               at all career stages can use to enhance their own science communication skills and enhance the credibility of science. </p>
-                              <button type="botton" class="btnN btnN-primary" href="Sesion Link">Session 4 Zoom Link</botton>
+                              <button type="button" class="btnN btnN-primary" data-toggle="modal" data-target="#session4">
+                                Panelists
+                              </button>
+                              <button type="botton" class="btnN btnN-primary" href="Sesion Link">Zoom Link</botton>
                           </div>
                         </div>
                       </div>                     
@@ -1048,7 +1124,6 @@
                 <div class="social-icon">
                   <!--                  <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>-->
                   <a class="social" href="" target="_blank"><i class="fa fa-twitter tooltip" id="no_twitter"></i></a>
-                  
                   <!-- <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a> -->
                   <!--                  <a class="social" href="#" target="_blank"><i class="fa fa-dribbble"></i></a>-->
                   <!--                  <a class="social" href="#" target="_blank"><i class="fa fa-behance"></i></a>-->
@@ -1339,96 +1414,11 @@
 <!--      </div>-->
 <!--    </section>-->
     <!-- Map Section End -->
-    <section class="section">
-      
-    </section>
-    <section class="section">
-      
-    </section>
+    <!-- <section class="section"></section>
 
-    <!-- Main contact Start -->
-  <section class="section">
-   <div class="main-content"> 
-   <!-- &lt;!&ndash; Start Contact Us Section &ndash;&gt; -->
-   <section id="contact">
-     <div class="container">
-       <div class="row wow fadeInDown" data-wow-delay="0.3s">
-         <div class="col-md-8 col-sm-7 contact-form">  
-           <form role="form" id="contactForm" data-toggle="validator" action="mail.php" method="POST"> 
-             <div class="title-header">
-               <h3 class="title-medium pull-left">Send us your Feedback!</h3>
-               <div class="icon pull-right"><i class="icon-envelope"></i></div>
-             </div>
-             <div class="row">                   
-               <div class="col-md-6">
-                 <div class="label-line">
-                   <span class="span"></span>
-                   <label class="label transition">Name</label>
-                   <input type="text" class="input" id="name" required data-error="Please enter your name">
-                   <div class="help-block with-errors"></div>
-                 </div>
-               </div>
-               <div class="col-md-6">
-                 <div class="label-line">
-                   <span class="span"></span>
-                   <label class="label transition">Email</label>
-                   <input type="email" class="input" id="email" required data-error="Please enter your email">
-                   <div class="help-block with-errors"></div>
-                 </div>
-               </div>
-               <div class="col-md-12">
-                 <div class="label-line textarea">
-                   <span class="span"></span>
-                   <label class="label transition">Message</label>
-                   <textarea id="message" class="input" required data-error="Write your message"></textarea>
-                   <div class="help-block with-errors"></div>
-                 </div>
-                 <button type="submit" id="form-submit" class="btn btn-common">Send <i class="icon-paper-plane" aria-hidden="true"></i></button>
-                 <div id="msgSubmit" class="h3 text-center hidden"></div>
-                 <div class="clearfix"></div>
-               </div>
-             </div>
-           </form>
-         </div> 
-         <div class="col-md-4 col-sm-5 information"> 
-             <div class="title-header">
-               <h3 class="title-medium">Contact Information</h3>
-             </div>             
-             <div class="contact-datails">
-               <div class="icon">
-                 <i class="fa fa-map-marker"></i>
-               </div>
-               <div class="info">
-                 <span class="detail">475 Riverside Drive, 840 Interchurch<br> New York, NY 10115</span>
-               </div>
-             </div>               
-             <div class="contact-datails">
-               <div class="icon">
-                 <i class="fa fa-phone"></i>
-               </div>
-               <div class="info">
-                 <span class="detail">+212.854.4261</span>
-               </div>
-             </div>
-             <div class="contact-datails">
-               <div class="icon">
-                 <i class="fa fa-envelope"></i>
-               </div>
-               <div class="info">
-                 <span class="detail">rogerlefort@icloud.com</span>
-               </div>
-             </div>
-             <div class="social text-center">
-               <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-               <!-- <a class="social" href="#" target="_blank"><i class="fa fa-google-plus"></i></a>
-               <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a> -->
-             </div>
-         </div>
-       </div>
-     </div>
-    </div>
-   </section>
-    <!-- End Contact Us Section  -->
+    <section class="section"></section> -->
+
+
 
     <!-- Footer Section Start -->   
    <!-- <footer class="section">
@@ -1446,9 +1436,9 @@
           <div class="col-md-3 col-sm-3 col-xs-12">
             <h3>Support</h3>
             <ul>
-&lt;!&ndash;              <li><a href="#">Support</a></li>&ndash;&gt;
-&lt;!&ndash;              <li><a href="#">Docs</a></li>&ndash;&gt;
-&lt;!&ndash;              <li><a href="#">Contact Us</a></li>               &ndash;&gt;
+<li><a href="#">Support</a></li>
+<li><a href="#">Docs</a></li>
+ <li><a href="#">Contact Us</a></li>
             </ul>
           </div>
           <div class="col-md-3 col-sm-3 col-xs-12">
@@ -1480,20 +1470,17 @@
     
 
     <!-- Copytight Start -->
-    <!-- <section id="copyright">
+    <section id="copyright">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <p class="copyright-text text-center">
-             ©Designed and Developed by 
-              <a href="http://graygrids.com/">
-                GrayGrids
-              </a>
+              Feedback or Suggestions? Contact the organizers at <span><i></i><a class="misclinks" href="mailto:PCRI@columbia.edu">PCRI@columbia.edu</a></span> | Follow the conversation <a class="misclinks" href="https://twitter.com/search?q=%23PCRISymposium&src=typd">#PCRISymposium</a> | &#169;2022 Columbia University
             </p>
           </div>
         </div>
       </div>
-    </section>  -->
+    </section> 
     <!-- Copytight End -->   
 
     <!-- Go to Top Link -->

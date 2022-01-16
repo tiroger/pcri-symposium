@@ -2411,3 +2411,14 @@ blockquote .quote-text {
 #fittext{
 padding-right: 20px;
 }
+
+.misclinks{
+  color: #fff;
+  margin: 0;
+}
+
+.timefont{
+  font-family: 'Montserrat';
+  font-size: 16px;
+}
+

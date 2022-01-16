@@ -11,7 +11,7 @@ body {
   font-weight: 400;
   color: #777777;
   margin: 0;
-  line-height: 25.8px;
+  line-height: 25.6px;
   background: #fff;
   -webkit-box-sizing: box-sizing;
   -moz-box-sizing: box-sizing;
@@ -844,6 +844,8 @@ fieldset[disabled] .btn {
   width: 120px;
   display: block;
   text-align: center;
+  font-family: 'Montserrat';
+  font-size: 17px;
 }
 .column-1 .nav-pills ul {
   margin-left: 40px;
@@ -2422,3 +2424,19 @@ padding-right: 20px;
   font-size: 16px;
 }
 
+#backimage {
+  /* The image used */
+  background-image: url("photographer.jpg");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

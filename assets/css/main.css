@@ -866,7 +866,7 @@ fieldset[disabled] .btn {
   border-radius: 50%;
 }
 .column-1 .nav-pills ul > li.color-1:after {
-  background: #f44336;
+  background: #FB674E;
 }
 .column-1 .nav-pills ul > li.color-2:after {
   background: #30b9f6;
@@ -875,7 +875,7 @@ fieldset[disabled] .btn {
   background: #8722c2;
 }
 .column-1 .nav-pills ul > li.color-4:after {
-  background: #4a5dcd;
+  background: #6567AB;
 }
 .column-1 .nav-pills ul > li.color-5:after {
   background: #0849A3;
@@ -922,13 +922,13 @@ fieldset[disabled] .btn {
   line-height: 20px;
 }
 .board .member .bg-1 {
-  background: #f44336;
+  background: #FB674E;
 }
 .board .member .bg-2 {
   background: #03a8f3;
 }
 .board .member .bg-3 {
-  background: #4a5dcd;
+  background: #6567AB;
 }
 .board .member .bg-4 {
   background: #8722c2;
@@ -2459,3 +2459,9 @@ padding-right: 20px;
 #jeson {
   padding: 28px 23.5px;
 }
+/* 
+#pcriLogo {
+  background-image: url("./img/alt_PCRI_LOGO.png"); 
+  background-repeat: no-repeat; 
+  background-size: cover;
+} */

@@ -816,7 +816,7 @@ fieldset[disabled] .btn {
   position: absolute;
   content: "";
   left: 45px;
-  top: 38px;
+  top: 30px;
   bottom: 0;
   width: 4px;
   height: 100%;
@@ -2465,3 +2465,9 @@ padding-right: 20px;
   background-repeat: no-repeat; 
   background-size: cover;
 } */
+
+
+.nav-tabs>li {
+  float: left;
+  margin-bottom: -20px;
+}

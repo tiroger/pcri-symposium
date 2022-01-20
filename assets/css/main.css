@@ -2422,6 +2422,14 @@ padding-right: 20px;
   margin: 0;
 }
 
+.hashtag:hover{
+  color: #1DA1F2;
+}
+
+.icon-social-twitter{
+  color: #fff;
+}
+
 .timefont{
   font-family: 'Montserrat';
   font-size: 16px;

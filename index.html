@@ -418,7 +418,7 @@
               <div class="main-board wow fadeInDown" data-wow-delay="0.3s">
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs day" role="tablist">
-                  <li role="presentation" class="active"><a aria-controls="day1" style="font-size: 16px;"><img src="assets/img/introduction.png" width="40px"> Jeannette Wing, Executive Vice President for Research<br><h4 id='welcome' style="color: #FFF;">Welcoming Remarks <br></h4></a></li>
+                  <li role="presentation" class="active"><a aria-controls="day1" style="font-size: 16px;" id="firstsesssion"><img src="assets/img/introduction.png" width="40px">Welcoming Remarks by Jeanette Wing<h4 id='welcome' style="color: #FFF; font-weight: 100;">Welcome Address by Katrina Armstrong</h4></a></li>
                   <!-- <button type="botton" class="btnN btnN-primary" id="timebutton" href="Sesion Link">Welcoming Remarks</button></a></li> -->
 <!--                  <li role="presentation"><a href="#day2" aria-controls="day2" role="tab" data-toggle="tab">26 JAN <br> <span>DAY 02</span> </a></li>-->
 <!--                  <li role="presentation"><a href="#day3" aria-controls="day3" role="tab" data-toggle="tab">27 JAN <br> <span>DAY 03</span></a></li>-->
@@ -433,14 +433,14 @@
                       <div class="col-md-12 board text-center">
                         <div class="column-1 col-md-3 col-sm-5">
                           <ul class="nav nav-pills event-time-list">
-                            <li><a href="">Time</a>
+                            <!-- <li><a>Time</a> -->
                               <!-- <li><button type="botton" class="btnN btnN-primary" id="timebutton" href="Sesion Link">Time</button> -->
                               <ul>
-                                <li class="color-5 timefont"><a href="#">9:45 - 10 AM</a></li>
-                                <li class="color-1 timefont"><a href="#">10 - 11:30 AM</a></li>
-                                <li class="color-2 timefont"><a href="#">11:45 - 1 PM</a></li>
-                                <li class="color-3 timefont"><a href="#">2 - 3:15 PM</a></li>
-                                <li class="color-4 timefont"><a href="#">3:45 - 5 PM</a></li>
+                                <li class="color-5 timefont"><a href="#">Welcoming<br>9:45 - 10 AM</a></li>
+                                <li class="color-1 timefont"><a href="#">Keynote<br>10 - 11:30 AM</a></li>
+                                <li class="color-2 timefont"><a href="#">Session 2<br>11:45 - 1 PM</a></li>
+                                <li class="color-3 timefont"><a href="#">Session 3<br>2 - 3:15 PM</a></li>
+                                <li class="color-4 timefont"><a href="#">Session 4<br>3:45 - 5 PM</a></li>
                               </ul>
                             </li>
                           </ul>
@@ -450,9 +450,9 @@
                           <div class="button">
                             <a href="#speakers" class="btn-large bg-1"><img src="assets/img/presentation.png" alt="" width="auto">Keynote</a>
                           </div>                             
-                            <h4 style="font-weight: 100;">Naomi Oreskes<br><b>Why Trust Science?</b><br>Moderated by Katrina Armstrong</h4>
-                            <p>Prof. Naomi Oreskes (Harvard University), a renowned historian of science trained as a geologist, talks about why science should be trusted, how to ensure its objectivity and quality, and how to promote trust in science.</p><br>
-                            <button type="button" class="btnN btnN-primary" data-toggle="modal" data-target="#keynote">Synopsis</button>
+                            <h4 style="font-weight: 100;">Naomi Oreskes<br><b>Why Trust Science?</b><br>Moderated by Mo Raymo</h4><br>
+                            <p>Prof. Naomi Oreskes (Harvard University), a renowned historian of science trained as a geologist, talks about why science should be trusted, how to ensure its objectivity and quality, and how to promote trust in science.</p><br><br>
+                            <!-- <button type="button" class="btnN btnN-primary" data-toggle="modal" data-target="#keynote">Synopsis</button> -->
                             <!-- <button type="botton" class="btnN btnN-primary" href="Sesion Link" target="_blank" rel="noopener noreferrer">Zoom Link</botton> -->
 
                           </div>                            
@@ -461,7 +461,7 @@
                             <a href="#speakers" class="btn-large bg-2"><img src="assets/img/round-table.png" alt="" width="auto">Session 2</a>
                           </div>
                             <h4 style="font-weight: 100;">Moderated by Jeannette Wing<br><b>Diversity, Equity and Trust in Science</b></h4>
-                            <br><p>This multidisciplinary panel will discuss the role of diversity and equity in promoting trust and credibility of science, including, for example, addressing bias in artificial intelligence, genomic research as a case study, diversity in clinical trial recruitment, and strategies to promote diversity across the research enterprise.</p><br>
+                            <br><p>This multidisciplinary panel will discuss the role of diversity and equity in promoting trust and credibility of science, including, for example, addressing bias in artificial intelligence, genomic research as a case study, diversity in clinical trial recruitment, and strategies to promote diversity across the research enterprise.</p><br><br>
                             <button type="button" class="btnN btnN-primary" data-toggle="modal" data-target="#session2">Panelists</button>
                             <!-- <button type="botton" class="btnN btnN-primary" href="Sesion Link" target="_blank" rel="noopener noreferrer">Zoom Link</botton> -->
                           </div>
@@ -480,7 +480,7 @@
                           </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
-                          <div class="member stephen">
+                          <div class="member stephen" id="stephen">
                             <div class="button">
                               <a href="#speakers" class="btn-large bg-4"><img src="assets/img/round-table.png" alt="" width="auto">Session 3</a>
                             </div>
@@ -494,7 +494,7 @@
                               <a href="#speakers" class="btn-large bg-3"><img src="assets/img/round-table.png" alt="" width="auto">Session 4</a>
                             </div>
                             <h4 style="font-weight: lighter;">Moderated by Chris Wiggins<br><b>Communicating Science to Promote Understanding and Action</b></h4>
-                            <p>In this round table, panelists will discuss what constitutes effective science communication, how such communication promotes trust in science and how it can prompt action on the issues of the day. Panelists will also provide approaches that researchers at all career stages can use to enhance their own science communication skills and enhance the credibility of science.</p>
+                            <p>In this round table, panelists will discuss what constitutes effective science communication, how such communication promotes trust in science and how it can prompt action on the issues of the day. Panelists will also provide approaches that researchers at all career stages can use to enhance their own science communication skills and enhance the credibility of science.</p><br>
                               <button type="button" class="btnN btnN-primary" data-toggle="modal" data-target="#session4">Panelists</button>
                               <!-- <button type="botton" class="btnN btnN-primary" href="Sesion Link" target="_blank" rel="noopener noreferrer">Zoom Link</botton> -->
                           </div>
@@ -1364,7 +1364,7 @@
                 <div class="social-icon">
                   <!--                  <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>-->
                   <a class="social" href="https://twitter.com/sudipsparikh" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a>
-                  <!-- <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a> -->
+                  <a class="social" href="https://www.linkedin.com/in/sudip-parikh-a1402217/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
                   <!--                  <a class="social" href="#" target="_blank"><i class="fa fa-dribbble"></i></a>-->
                   <!--                  <a class="social" href="#" target="_blank"><i class="fa fa-behance"></i></a>-->
                 </div>

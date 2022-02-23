@@ -11,7 +11,7 @@ body {
   font-weight: 400;
   color: #777777;
   margin: 0;
-  line-height: 23.6px;
+  /* line-height: 23.6px; */
   background: #fff;
   -webkit-box-sizing: box-sizing;
   -moz-box-sizing: box-sizing;
@@ -791,9 +791,9 @@ fieldset[disabled] .btn {
 }
 .main-board .day > li > a {
   color: #777777;
-  padding: 4px 354px;
-  margin-right: 0px;
-  /*margin-left: 50px*/
+  padding: 1px 10px;
+  margin-right: 10px;
+  margin-left: 210px;
   font-weight: 400;
   border: none;
   /*text-transform: uppercase;*/
@@ -816,10 +816,10 @@ fieldset[disabled] .btn {
   position: absolute;
   content: "";
   left: 45px;
-  top: 30px;
+  top: -65px;
   bottom: 0;
   width: 4px;
-  height: 100%;
+  height: 112%;
   background: #efefef;
 }
 .column-1:after {
@@ -852,14 +852,14 @@ fieldset[disabled] .btn {
   margin-left: 40px;
 }
 .column-1 .nav-pills ul li {
-  margin: 88px 35px;
+  margin: 108px 35px;
   position: relative;
 }
 .column-1 .nav-pills ul li:after {
   position: absolute;
   content: "";
   left: -55px;
-  top: 10px;
+  top: 5px;
   bottom: 0;
   width: 24px;
   height: 24px;
@@ -937,7 +937,7 @@ fieldset[disabled] .btn {
   margin: 40px 0;
 }
 .board .coffee {
-  margin: 0px auto;
+  margin: 50px auto;
   padding: 48px 0px;
   width: 40px;
   background: #736357;
@@ -955,7 +955,7 @@ fieldset[disabled] .btn {
   margin-top: 20px;
   padding: 0px;
   text-align: center;
-  /*box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);*/
+  /* box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2); */
   -webkit-transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
   -moz-transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
   -o-transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
@@ -2434,6 +2434,11 @@ padding-right: 20px;
   font-family: 'Montserrat';
   font-size: 16px;
 }
+/* Adjust the time */
+.event-time-list {
+  margin-top: -191px
+  }
+  
 
 #backimage {
   /* The image used */
@@ -2454,6 +2459,7 @@ padding-right: 20px;
 
 #welcome {
   padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 /* #timebutton{
@@ -2465,8 +2471,13 @@ padding-right: 20px;
 } */
 
 #jeson {
-  padding: 28px 23.5px;
+  padding-bottom: 25px;
 }
+
+#stephen {
+  padding-bottom: 20px;
+}
+
 /* 
 #pcriLogo {
   background-image: url("./img/alt_PCRI_LOGO.png"); 
@@ -2478,4 +2489,13 @@ padding-right: 20px;
 .nav-tabs>li {
   float: left;
   margin-bottom: -20px;
+  margin-left: 320px;
 }
+
+#firstsession {
+  padding: 0px;
+}
+
+/* .member .stephen {
+  padding: 28px 23.5px;
+} */

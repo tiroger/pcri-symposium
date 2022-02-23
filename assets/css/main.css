@@ -792,8 +792,8 @@ fieldset[disabled] .btn {
 .main-board .day > li > a {
   color: #777777;
   padding: 1px 10px;
-  margin-right: 195px;
-  margin-left: 195px;
+  margin-right: 149px;
+  margin-left: 100px;
   font-weight: 400;
   border: none;
   /*text-transform: uppercase;*/

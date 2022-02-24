@@ -1189,6 +1189,8 @@ h1 {
 .speakers-member .member-desc h5 {
   font-size: 14px;
   font-weight: 400;
+  margin-left: -25px;
+  margin-right: -25px;
 }
 .speakers-member .member-desc p {
   line-height: 20px;

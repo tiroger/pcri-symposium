@@ -2432,6 +2432,10 @@ padding-right: 20px;
   color: #fff;
 }
 
+#twitterx{
+  color: #ffffff;
+}
+
 .timefont{
   font-family: 'Montserrat';
   font-size: 16px;
@@ -2510,3 +2514,73 @@ padding-right: 20px;
 	content:"𝕏";
 	font-size:1.2em;
 }
+
+#hastagx:hover{
+  color: #1DA1F2;
+}
+
+#mailtohover:hover{
+  color: #1DA1F2;
+}
+
+/* ==========================================================================
+   Sponsors Section
+   ========================================================================== */
+
+/* General container alignment for sponsors */
+#sponsors .container {
+  max-width: 1000px; /* Adjust as needed */
+  margin: 0 auto; /* Center the container */
+}
+
+/* Ensure sponsor rows are properly aligned */
+#sponsors .row {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  margin: 0 auto; /* Prevents offset issues */
+}
+
+/* Sponsor logo styling */
+#sponsors .sponsor-image {
+  height: 80px; /* Sets a uniform height for all logos */
+  object-fit: contain; /* Maintains aspect ratio without cropping */
+  max-width: 100%; /* Ensures images don't overflow their containers */
+}
+
+/* Sponsor logo container styling */
+#sponsors .sponsors-logo {
+  text-align: center; /* Ensures logos are centered within their containers */
+  padding: 15px; /* Adds space around the logos */
+  margin-bottom: 10px; /* Adds spacing between rows */
+}
+
+/* Optional hover effect for sponsor logos */
+#sponsors .sponsors-logo img:hover {
+  transform: scale(1.05); /* Adds a slight zoom effect on hover */
+  transition: transform 0.3s; /* Smooth transition */
+}
+
+/* Responsive adjustments for sponsor section */
+@media (max-width: 768px) {
+  #sponsors .sponsor-image {
+    height: 100px; /* Reduces logo height for smaller screens */
+  }
+
+  #sponsors .sponsors-logo {
+    padding: 10px; /* Reduces padding for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  #sponsors .sponsor-image {
+    height: 80px; /* Further reduce logo height on very small screens */
+  }
+
+  #sponsors .sponsors-logo {
+    padding: 5px; /* Compact spacing on extra-small screens */
+  }
+}
+
+
+

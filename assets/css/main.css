@@ -2501,3 +2501,12 @@ padding-right: 20px;
 /* .member .stephen {
   padding: 28px 23.5px;
 } */
+
+
+.fa.fa-twitter{
+	font-family:sans-serif;
+}
+.fa.fa-twitter::before{
+	content:"𝕏";
+	font-size:1.2em;
+}

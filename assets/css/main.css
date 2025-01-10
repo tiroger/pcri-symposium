@@ -769,191 +769,210 @@ fieldset[disabled] .btn {
 /* ==========================================================================
    Schedule Section Start
    ========================================================================== */
-.main-board {
-  background: #fff;
-  box-shadow: 2px 0px 32px rgba(0, 0, 0, 0.07);
-  position: relative;
-  margin-top: 30px;
-}
-.main-board .nav-tabs {
-  border-bottom: none;
-}
-.main-board .day {
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.05);
-}
-.main-board .day > li.active > a,
-.main-board .day > li.active > a:focus,
-.main-board .day > li.active > a:hover {
-  background-color: #9BCBEB;
-  color: #fff;
-  border-radius: 0;
-  border: none;
-}
-.main-board .day > li > a {
-  color: #777777;
-  padding: 1px 10px;
-  margin-right: 149px;
-  margin-left: 100px;
-  font-weight: 400;
-  border: none;
-  /* text-transform: uppercase; */
-  font-size: 20px;
-  text-align: center;
-  border-radius: 0;
-}
-.main-board .day > li > a span {
-  font-size: 16px;
-}
-.main-board .day > li > a:focus,
-.main-board .day > li > a:hover {
-  background: #9BCBEB;
-  color: #fff;
-}
-.column-1 {
-  position: relative;
-}
-.column-1:before {
-  position: absolute;
-  content: "";
-  left: 45px;
-  top: -65px;
-  bottom: 0;
-  width: 4px;
-  height: 112%;
-  background: #efefef;
-}
-.column-1:after {
-  position: absolute;
-  content: "";
-  left: 35px;
-  bottom: -45px;
-  width: 24px;
-  height: 24px;
-  background: #efefef;
-  border-radius: 50%;
-}
-.column-1 .nav-pills li {
-  text-align: left;
-  float: none;
-  margin-bottom: 34px;
-}
-.column-1 .nav-pills li a {
-  background: #dddddd;
-  color: #777777;
-  border-radius: 0px;
-  padding: 7px 10px;
-  width: 120px;
-  display: block;
-  text-align: center;
-  font-family: 'Montserrat';
-  font-size: 15px;
-}
-.column-1 .nav-pills ul {
-  margin-left: 40px;
-}
-.column-1 .nav-pills ul li {
-  margin: 108px 35px;
-  position: relative;
-}
-.column-1 .nav-pills ul li:after {
-  position: absolute;
-  content: "";
-  left: -55px;
-  top: 5px;
-  bottom: 0;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-}
-.column-1 .nav-pills ul > li.color-1:after {
-  background: #FB674E;
-}
-.column-1 .nav-pills ul > li.color-2:after {
-  background: #30b9f6;
-}
-.column-1 .nav-pills ul > li.color-3:after {
-  background: #8722c2;
-}
-.column-1 .nav-pills ul > li.color-4:after {
-  background: #6567AB;
-}
-.column-1 .nav-pills ul > li.color-5:after {
-  background: #0849A3;
+/* Reset some basic elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.column-1 .nav-pills ul > li > a {
-  background: #dddddd;
-  color: #777777;
-  border-radius: 0px;
-  padding: 6px 4px;
-  width: 120px;
-  display: block;
+.schedule-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.schedule-title {
   text-align: center;
+  font-size: 5rem;
+  margin-bottom: 2rem;
 }
-.board {
-  padding: 60px 60px 30px;
+
+/* Updated session grid */
+.session-grid {
+  display: grid;
+  grid-template-columns: 250px 1fr 80px 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: start; /* Align items to start */
 }
-.board .button {
+
+/* Session card with fixed height */
+.session-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  min-height: 400px; /* Set minimum height for all cards */
+}
+
+/* Session content wrapper */
+.session-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.session-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.session-title {
+  color: #6b7280;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+}
+
+.session-description {
+  color: #6b7280;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  flex: 1; /* Allow description to take remaining space */
+}
+
+/* Button container at bottom */
+.button-container {
+  margin-top: auto; /* Push to bottom */
+}
+
+.panelist-btn {
+  background: #f3f4f6;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: background-color 0.2s;
+}
+
+/* Break column adjustments */
+.break-column {
+  width: 100%;
+  height: 100%;
+  min-height: 800px; /* Match total height of session cards */
+  background: #64748b;
+  padding: 2rem 0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Changed to space-between */
+}
+
+/* Keep your existing timeline styles */
+.timeline-container {
   position: relative;
-  margin-top: -45px;
-  text-align: center;
+  padding-left: 20px;
 }
-.board .button .btn-large {
-  padding: 12px 42px;
-  color: #fff;
-  font-size: 16px;
+
+.timeline-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 15px;
 }
-.board .button a img {
-  margin-right: 12px;
+
+.time-slot {
+  background-color: #f3f4f6;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
 }
-.board .member {
-  background: #efefef;
-  padding: 28px 27px;
-  margin-bottom: 36px;
-  padding-left: 15px;
-  padding-right: 15px;
+
+/* Keep your existing colors */
+.timeline-dot.blue { background-color: #2563eb; }
+.timeline-dot.red { background-color: #dc2626; }
+.timeline-dot.purple { background-color: #7c3aed; }
+.timeline-dot.purple-dark { background-color: #6d28d9; }
+.timeline-dot.green { background-color: #05a10a; }
+
+.badge-fireside { background: #2563eb; }
+.badge-case-study { background: #10b981; }
+.badge-session3 { background: #7c3aed; }
+.badge-session4 { background: #6d28d9; }
+
+.session-title {
+  color: #6b7280;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
 }
-.board .member h4 {
-  font-size: 20px;
-  padding: 18px 0px;
+
+.session-description {
+  color: #6b7280;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
 }
-.board .member p {
-  font-size: 14px;
-  line-height: 20px;
+
+/* #session1 { 
+  font-size: 2rem;
+} */
+/* Break Column */
+.break-column {
+  width: 100%;
+  height: 100%;
+  background: #64748b;
+  padding: 2rem 0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
-.board .member .bg-1 {
-  background: #FB674E;
+
+.break-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  white-space: nowrap;
+  margin: 2rem 0;
+  font-size: 1.75rem;
+  background: rgba(255,255,255,0.1);
+  padding: 2rem 0.5rem;
+  border-radius: 4px;
+  letter-spacing: 0.1em;
 }
-.board .member .bg-2 {
-  background: #03a8f3;
-}
-.board .member .bg-3 {
-  background: #6567AB;
-}
-.board .member .bg-4 {
-  background: #8722c2;
-}
-.board .jon p {
-  margin: 40px 0;
-}
-.board .coffee {
-  margin: 50px auto;
-  padding: 48px 0px;
+
+.coffee-icon {
   width: 40px;
-  background: #736357;
-}
-.board .coffee .coffee-icon {
-  margin-bottom: 24px;
-}
-.board .coffee p {
-  color: #fff;
+  height: 40px;
+  opacity: 0.7;
 }
 
-#panel-moderator {
-  font-size: 18px;
-  color: #777777;
-  font-weight: 600;
+/* Buttons */
+.panelist-btn {
+  background: #f3f4f6;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: background-color 0.2s;
 }
+
+.panelist-btn:hover {
+  background: #e5e7eb;
+}
+
+.session-summary {
+  color: #6b7280;
+  font-size: 1.65rem;
+}
+
+
 /* ==========================================================================
    Sponsors Section Style
    ========================================================================== */

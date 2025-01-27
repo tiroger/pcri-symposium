@@ -896,13 +896,14 @@ fieldset[disabled] .btn {
 .timeline-dot.blue { background-color: #2563eb; }
 .timeline-dot.red { background-color: #660033; }
 .timeline-dot.purple { background-color: #1c0333; }
-.timeline-dot.teal { background-color: #008080; }
-.timeline-dot.green { background-color: #12B981; }
+.timeline-dot.teal { background-color: #073763; }
+.timeline-dot.green { background-color: #0c343d; }
+.timeline-dot.grey { background-color: #64758B; }
 
 .badge-fireside { background: #660033; }
-.badge-case-study { background: #10b981; }
+.badge-case-study { background: #0c343d; }
 .badge-session3 { background: #1c0333; }
-.badge-session4 { background: #008080; }
+.badge-session4 { background: #073763; }
 
 .session-title {
   color: #6b7280;

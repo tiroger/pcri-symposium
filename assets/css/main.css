@@ -894,15 +894,15 @@ fieldset[disabled] .btn {
 
 /* Keep your existing colors */
 .timeline-dot.blue { background-color: #2563eb; }
-.timeline-dot.red { background-color: #dc2626; }
-.timeline-dot.purple { background-color: #7c3aed; }
-.timeline-dot.purple-dark { background-color: #6d28d9; }
-.timeline-dot.green { background-color: #05a10a; }
+.timeline-dot.red { background-color: #660033; }
+.timeline-dot.purple { background-color: #1c0333; }
+.timeline-dot.teal { background-color: #008080; }
+.timeline-dot.green { background-color: #12B981; }
 
-.badge-fireside { background: #2563eb; }
+.badge-fireside { background: #660033; }
 .badge-case-study { background: #10b981; }
-.badge-session3 { background: #7c3aed; }
-.badge-session4 { background: #6d28d9; }
+.badge-session3 { background: #1c0333; }
+.badge-session4 { background: #008080; }
 
 .session-title {
   color: #6b7280;
@@ -972,6 +972,15 @@ fieldset[disabled] .btn {
   font-size: 1.65rem;
 }
 
+ul {
+  list-style-type: disc; /* Ensures bullets are visible */
+  margin-left: 20px;     /* Adds indentation for nested lists */
+  padding-left: 20px;    /* Adds padding for nested lists */
+}
+
+ul ul {
+  list-style-type: circle; /* Different bullet style for nested lists */
+}
 
 /* ==========================================================================
    Sponsors Section Style

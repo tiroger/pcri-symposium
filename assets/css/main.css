@@ -836,6 +836,8 @@ fieldset[disabled] .btn {
 .session-description {
   color: #6b7280;
   font-size: 1.75rem;
+  font-weight: 800;
+  font-style: italic;
   margin-bottom: 1rem;
   flex: 1; /* Allow description to take remaining space */
 }
@@ -912,11 +914,11 @@ fieldset[disabled] .btn {
   font-weight: 800;
 }
 
-.session-description {
+/* .session-description {
   color: #6b7280;
   font-size: 1.75rem;
   margin-bottom: 1rem;
-}
+} */
 
 /* #session1 { 
   font-size: 2rem;

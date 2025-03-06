@@ -2962,3 +2962,43 @@ padding-right: 20px;
     height: 30px;
   }
 }
+
+/* Enhanced animation for iframe containers */
+.iframe-container {
+  width: 100%;
+  margin-top: 10px;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.7s ease-in-out, opacity 0.5s ease-in-out, margin 0.3s ease;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.iframe-container.open {
+  max-height: 600px; /* Adjust this value to match iframe height */
+  opacity: 1;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.toggle-btn {
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.toggle-btn.active {
+  background-color: #e5e7eb;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Add a nice loading effect for the iframe */
+.iframe-container iframe {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.iframe-container.open iframe {
+  opacity: 1;
+}

@@ -494,17 +494,23 @@
             <p class="session-description">Marcia McNutt & Eric Horvitz</p>
             <p class="session-summary">Join Marcia McNutt, President of the National Academy of Sciences, and Eric Horvitz, Chief. Scientist, Microsoft, a pioneer in artificial intelligence, as they explore the revolutionary role of generative AI in science. This session will highlight how AI is transforming research practices and policies, driving innovation, and expanding the boundaries of what is scientifically possible, but also presenting new risks, challenges and ethical quandaries in relation to the integrity of science.</p>
             <br>
-            <button class="panelist-btn" onclick="window.open('https://app.sli.do/event/uhmbSdCVZxn1QVf7pwNo4V', '_blank')">Ask a Question</button>
+            <button class="panelist-btn toggle-btn" id="question-btn-1">Ask a Question</button>
+            <div class="iframe-container" id="iframe-container-1" style="display: none;">
+              <iframe src="https://app.sli.do/event/uhmbSdCVZxn1QVf7pwNo4V" height="100%" width="100%" frameBorder="0" style="min-height: 560px;" allow="clipboard-write" title="Slido"></iframe>
+            </div>
           </div>
     
           <div class="session-card">
             <div class="session-badge badge-case-study">(Hypothetical) Case Study</div>
             <h3 class="session-title">Anatomy of a (Hypothetical) Case of Research Misconduct</h3>
             <p class="session-description">Moderated by Naomi Schrag</p>
-            <p class="session-summary">This interactive panel discussion will explore the "inside story" of a hypothetical research misconduct case involving questionable data in a high-profile oncology publication. Through a five-scene presentation, panelists will portray key stakeholders—including the principal investigator, graduate student, research integrity officer, journalist as they navigate the complex challenges that emerge when scientific misconduct is suspected and investigated. The session will examine critical decision points from multiple perspectives.<br><br></p>
+            <p class="session-summary">This interactive panel discussion will explore the "inside story" of a hypothetical research misconduct case involving questionable data in a high-profile oncology publication. Through a five-scene presentation, panelists will portray key stakeholders—including the principal investigator, graduate student, research integrity officer, journalist as they navigate the complex challenges that emerge when scientific misconduct is suspected and investigated. The session will examine critical decision points from multiple perspectives.<br><br></p><br>
             <button class="panelist-btn" data-toggle="modal" data-target="#session2">Presenters</button>
             <br>
-            <button class="panelist-btn" onclick="window.open('https://app.sli.do/event/f2K4aeNAyYf6jJce25JxFJ', '_blank')">Ask a Question</button>
+            <button class="panelist-btn toggle-btn" id="question-btn-2">Ask a Question</button>
+            <div class="iframe-container" id="iframe-container-2" style="display: none;">
+              <iframe src="https://app.sli.do/event/f2K4aeNAyYf6jJce25JxFJ" height="100%" width="100%" frameBorder="0" style="min-height: 560px;" allow="clipboard-write" title="Slido"></iframe>
+            </div>
           </div>
         </div>
     
@@ -524,7 +530,10 @@
             <p class="session-summary">In this session, journal editors will discuss how they are responding to a variety of research integrity issues, from PubPeer to paper mills, and what authors can do to avoid publication problems.</p><br><br><br><br><br><br>
             <button class="panelist-btn" data-toggle="modal" data-target="#session3">Panelists</button>
             <br>
-            <button class="panelist-btn" onclick="window.open('https://app.sli.do/event/1NWcwcnRMVZDGhLjTP2vCR', '_blank')">Ask a Question</button>
+            <button class="panelist-btn toggle-btn" id="question-btn-3">Ask a Question</button>
+            <div class="iframe-container" id="iframe-container-3" style="display: none;">
+              <iframe src="https://app.sli.do/event/1NWcwcnRMVZDGhLjTP2vCR" height="100%" width="100%" frameBorder="0" style="min-height: 560px;" allow="clipboard-write" title="Slido"></iframe>
+            </div>
           </div>
     
           <div class="session-card">
@@ -535,7 +544,10 @@
             <br>
             <button class="panelist-btn" data-toggle="modal" data-target="#session4">Panelists</button>
             <br>
-            <button class="panelist-btn" onclick="window.open('https://app.sli.do/event/vXWBJ43cniGMdaAEWGbD1p', '_blank')">Ask a Question</button>
+            <button class="panelist-btn toggle-btn" id="question-btn-4">Ask a Question</button>
+            <div class="iframe-container" id="iframe-container-4" style="display: none;">
+              <iframe src="https://app.sli.do/event/vXWBJ43cniGMdaAEWGbD1p" height="100%" width="100%" frameBorder="0" style="min-height: 560px;" allow="clipboard-write" title="Slido"></iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -1700,7 +1712,54 @@
     <i class="icon-arrow-up"></i>
     </a>
 
-     
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Initialize all containers to be hidden
+        const containers = document.querySelectorAll('.iframe-container');
+        containers.forEach(container => {
+          container.style.display = 'none';
+        });
+        
+        // Define a function to handle the toggle for any button
+        function setupToggle(btnId, containerId) {
+          const btn = document.getElementById(btnId);
+          if (!btn) return; // Skip if element doesn't exist
+          
+          btn.addEventListener('click', function() {
+            const container = document.getElementById(containerId);
+            
+            if (container.style.display === 'none') {
+              // First make it visible but with height 0
+              container.style.display = 'block';
+              
+              // Force a reflow to ensure the browser recognizes the change
+              void container.offsetWidth;
+              
+              // Now add the open class to animate it
+              container.classList.add('open');
+              this.classList.add('active');
+              this.textContent = 'Hide Questions';
+            } else {
+              // Remove the open class first to animate the closing
+              container.classList.remove('open');
+              this.classList.remove('active');
+              this.textContent = 'Ask a Question';
+              
+              // After animation completes, hide the container
+              setTimeout(() => {
+                container.style.display = 'none';
+              }, 700); // Match this to your transition duration
+            }
+          });
+        }
+        
+        // Set up all four buttons
+        setupToggle('question-btn-1', 'iframe-container-1');
+        setupToggle('question-btn-2', 'iframe-container-2');
+        setupToggle('question-btn-3', 'iframe-container-3');
+        setupToggle('question-btn-4', 'iframe-container-4');
+      });
+    </script>
 
     <!-- jQuery Load -->    
     <script src="assets/js/jquery.min.js"></script>

@@ -2635,5 +2635,330 @@ padding-right: 20px;
   }
 }
 
+/* Code below to make webpage responsive to accommodate different screen sizes */
 
+/* Base styles (for all screen sizes) */
+.session-grid {
+  display: grid;
+  grid-template-columns: 250px 1fr 80px 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: start;
+}
 
+.timeline-container {
+  position: relative;
+  padding-left: 20px;
+}
+
+.time-slot {
+  background-color: #f3f4f6;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.timeline-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.session-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+}
+
+.session-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.session-title {
+  color: #6b7280;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+}
+
+.session-description {
+  color: #6b7280;
+  font-size: 1.75rem;
+  font-weight: 800;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.session-summary {
+  color: #6b7280;
+  font-size: 1.65rem;
+}
+
+.break-column {
+  width: 100%;
+  height: 100%;
+  min-height: 800px;
+  background: #64748b;
+  padding: 2rem 0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.break-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  white-space: nowrap;
+  margin: 2rem 0;
+  font-size: 1.75rem;
+  background: rgba(255,255,255,0.1);
+  padding: 2rem 0.5rem;
+  border-radius: 4px;
+  letter-spacing: 0.1em;
+}
+
+.coffee-icon {
+  width: 40px;
+  height: 40px;
+  opacity: 0.7;
+}
+
+.panelist-btn {
+  background: #f3f4f6;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: background-color 0.2s;
+}
+
+.panelist-btn:hover {
+  background: #e5e7eb;
+}
+
+/* Timeline dot colors */
+.timeline-dot.blue { background-color: #2563eb; }
+.timeline-dot.red { background-color: #660033; }
+.timeline-dot.purple { background-color: #1c0333; }
+.timeline-dot.teal { background-color: #073763; }
+.timeline-dot.green { background-color: #0c343d; }
+.timeline-dot.grey { background-color: #64758B; }
+
+/* Badge colors */
+.badge-fireside { background: #660033; }
+.badge-case-study { background: #0c343d; }
+.badge-session3 { background: #1c0333; }
+.badge-session4 { background: #073763; }
+
+/* Tablet Styles */
+@media screen and (max-width: 992px) {
+  .session-grid {
+    grid-template-columns: 200px 1fr 60px 1fr;
+    gap: 1.5rem;
+  }
+  
+  .session-title {
+    font-size: 1.8rem;
+  }
+  
+  .session-description {
+    font-size: 1.5rem;
+  }
+  
+  .session-summary {
+    font-size: 1.4rem;
+  }
+  
+  .session-badge {
+    font-size: 1.6rem;
+  }
+  
+  .break-text {
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .schedule-title {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Switch to single column layout */
+  .session-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  /* Make timeline horizontal on mobile */
+  .timeline-container {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .time-slot {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  
+  .time-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .time-label {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  /* Style sessions for mobile */
+  .sessions-left {
+    order: 2;
+  }
+  
+  .sessions-right {
+    order: 4;
+  }
+  
+  .break-column {
+    order: 3;
+    min-height: auto;
+    padding: 2rem;
+    margin: 1rem 0;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .break-text {
+    writing-mode: horizontal-tb;
+    margin: 0 1rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.4rem;
+  }
+  
+  /* Adjust card heights for mobile */
+  .session-card {
+    min-height: auto;
+    padding: 1.2rem;
+  }
+  
+  .session-title {
+    font-size: 1.6rem;
+  }
+  
+  .session-description {
+    font-size: 1.4rem;
+  }
+  
+  .session-summary {
+    font-size: 1.3rem;
+  }
+  
+  .session-badge {
+    font-size: 1.4rem;
+    padding: 6px 12px;
+  }
+  
+  .panelist-btn {
+    font-size: 1.3rem;
+    padding: 8px 12px;
+  }
+}
+
+/* Small Mobile Styles */
+@media screen and (max-width: 480px) {
+  .schedule-section {
+    padding: 1.5rem;
+  }
+  
+  .schedule-title {
+    font-size: 3rem;
+  }
+  
+  .time-slot {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px;
+  }
+  
+  .time-info {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 8px;
+    width: 100%;
+  }
+  
+  .time-label {
+    margin-bottom: 5px;
+    font-size: 1rem;
+  }
+  
+  .time-value {
+    font-size: 0.9rem;
+  }
+  
+  .timeline-dot {
+    width: 6px;
+    height: 6px;
+  }
+  
+  .session-title {
+    font-size: 1.4rem;
+  }
+  
+  .session-description {
+    font-size: 1.2rem;
+  }
+  
+  .session-summary {
+    font-size: 1.1rem;
+  }
+  
+  .session-badge {
+    font-size: 1.2rem;
+    padding: 5px 10px;
+  }
+  
+  .panelist-btn {
+    font-size: 1.1rem;
+    padding: 6px 10px;
+  }
+  
+  .break-text {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.2rem;
+  }
+  
+  .coffee-icon {
+    width: 30px;
+    height: 30px;
+  }
+}

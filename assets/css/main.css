@@ -2803,11 +2803,18 @@ padding-right: 20px;
     margin-bottom: 1.5rem;
   }
   
+  .schedule-section {
+    padding: 0; /* Remove padding to allow full-width */
+  }
+  
   /* Switch to single column layout */
   .session-grid {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    width: 100vw; /* Set to viewport width */
+    margin-left: calc(-50vw + 50%); /* Negative margin technique to break out of parent container */
+    margin-right: calc(-50vw + 50%);
   }
   
   /* Make timeline horizontal on mobile */
@@ -2817,6 +2824,8 @@ padding-right: 20px;
     flex-direction: column;
     padding-left: 0;
     margin-bottom: 2rem;
+    width: 100%;
+    padding: 0 10px; /* Small padding on the sides */
   }
   
   .time-slot {
@@ -2824,6 +2833,8 @@ padding-right: 20px;
     flex-direction: row;
     justify-content: space-between;
     padding: 15px;
+    border-radius: 0; /* Remove border radius for full-width look */
+    margin-bottom: 5px;
   }
   
   .time-info {
@@ -2842,19 +2853,33 @@ padding-right: 20px;
   /* Style sessions for mobile */
   .sessions-left {
     order: 2;
+    width: 100%;
   }
   
   .sessions-right {
     order: 4;
+    width: 100%;
+  }
+  
+  /* Make session cards full-width */
+  .session-card {
+    min-height: auto;
+    padding: 1.2rem;
+    width: 100%;
+    border-radius: 0; /* Remove border radius for full-width look */
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   }
   
   .break-column {
     order: 3;
     min-height: auto;
-    padding: 2rem;
-    margin: 1rem 0;
+    padding: 2rem 0; /* Remove horizontal padding */
+    margin: 0; /* Remove margin */
     flex-direction: row;
     justify-content: center;
+    width: 100%;
+    border-radius: 0; /* Remove border radius for full-width look */
   }
   
   .break-text {
@@ -2864,12 +2889,7 @@ padding-right: 20px;
     font-size: 1.4rem;
   }
   
-  /* Adjust card heights for mobile */
-  .session-card {
-    min-height: auto;
-    padding: 1.2rem;
-  }
-  
+  /* Adjust typography for mobile */
   .session-title {
     font-size: 1.6rem;
   }
@@ -2891,16 +2911,32 @@ padding-right: 20px;
     font-size: 1.3rem;
     padding: 8px 12px;
   }
+  
+  /* Make iframe containers full-width */
+  .iframe-container {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0; /* Remove border radius for full-width look */
+  }
+  
+  .iframe-container.open {
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  /* Adjust iframe height for better mobile viewing */
+  .iframe-container iframe {
+    min-height: 450px !important;
+    width: 100%;
+  }
 }
 
 /* Small Mobile Styles */
 @media screen and (max-width: 480px) {
-  .schedule-section {
-    padding: 1.5rem;
-  }
-  
   .schedule-title {
     font-size: 3rem;
+    padding: 0 15px; /* Add padding only to the title */
   }
   
   .time-slot {
@@ -2947,9 +2983,12 @@ padding-right: 20px;
     padding: 5px 10px;
   }
   
+  /* Full-width buttons */
   .panelist-btn {
     font-size: 1.1rem;
-    padding: 6px 10px;
+    padding: 10px;
+    width: 100%;
+    margin: 5px 0;
   }
   
   .break-text {
@@ -2960,6 +2999,11 @@ padding-right: 20px;
   .coffee-icon {
     width: 30px;
     height: 30px;
+  }
+  
+  /* Smaller height for iframes on very small screens */
+  .iframe-container iframe {
+    min-height: 350px !important;
   }
 }
 

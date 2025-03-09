@@ -43,26 +43,27 @@
 
 
     <!-- Header Area wrapper Starts -->
-    <header id="header-wrap">
-      <!-- Roof area Starts -->
-      <div id="roof" class="hidden-xs">
-          <div class="container">
-            <div class="col-md-6 col-sm-6">
-              <div class="info-bar-address">
-                 <i class="icon-location-pin"></i> New York, NY, United States
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-6">
-              <!-- Quick Contacts Starts -->
-              <div class="quick-contacts">
-                  <span><i class="icon-call-in"></i>212.854.4261</span>
-                  <span><i class="icon-envelope"></i><a href="mailto:PCRI@columbia.edu">PCRI@columbia.edu</a></span>
-              </div>
-              <!-- Quick Contacts End -->
-            </div>
-          </div>
+<!-- Updated Header Structure with Mobile Support -->
+<header id="header-wrap">
+  <!-- Roof area Starts -->
+  <div id="roof" class="visible-xs visible-sm visible-md visible-lg">
+    <div class="container">
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="info-bar-address">
+           <i class="icon-location-pin"></i> New York, NY, United States
+        </div>
       </div>
-      <!-- Roof area End -->
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <!-- Quick Contacts Starts -->
+        <div class="quick-contacts">
+            <span><i class="icon-call-in"></i>212.854.4261</span>
+            <span><i class="icon-envelope"></i><a href="mailto:PCRI@columbia.edu">PCRI@columbia.edu</a></span>
+        </div>
+        <!-- Quick Contacts End -->
+      </div>
+    </div>
+  </div>
+  <!-- Roof area End -->
 
   <!-- Nav Menu Section Start -->
   <div class="navigation-menu">
@@ -76,51 +77,36 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="" width="350"></a>
+          <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="Symposium Logo" width="350"></a>
         </div>
         
         <div class="collapse navbar-collapse" id="navbar">
-          <!-- Desktop menu items are commented out but structure is preserved -->
-          <!--
+          <!-- Desktop menu items can be uncommented and customized as needed -->
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Pages <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="pricing.html">Pricing Table</a></li>
-                <li><a href="sponsors.html">Sponsors</a></li>
-              </ul>
-            </li>                
-            <li><a href="schedule.html">Schedule</a></li>              
-            <li><a href="speakers.html">Speakers</a></li>
-            <li class="animated bounceIn"><a href="pricing.html">Register</a></li>                
+            <li class="active"><a href="#header-wrap">Home</a></li>
+            <li><a href="#event">About</a></li>
+            <li><a href="#eventSchedule">Schedule</a></li>
+            <li><a href="#speakersBio">Speakers</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+            <li class="animated bounceIn"><a href="https://events.columbia.edu/cal/event/eventView.do?b=de&calPath=%2Fpublic%2Fcals%2FMainCal&guid=CAL-00bbdb71-934dfbb4-0193-4fc06d7e-00004f5bevents@columbia.edu&recurrenceId=" target="_blank" rel="noopener noreferrer">Register</a></li>
           </ul>
-          -->
         </div><!-- /navbar-collapse -->
       </div><!-- /container -->
 
-      <!-- Mobile Menu Start -->
-      <!-- 
+      <!-- Mobile Menu -->
       <ul class="wpb-mobile-menu">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="#">Pages</a>
-          <ul class="dropdown">
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="pricing.html">Pricing Table</a></li>
-            <li><a href="sponsors.html">Sponsors</a></li>
-          </ul>
-        </li>                
-        <li><a href="schedule.html">Schedule</a></li>              
-        <li><a href="speakers.html">Speakers</a></li>
-        <li><a href="pricing.html">Register</a></li>
+        <li class="active"><a href="#header-wrap">Home</a></li>
+        <li><a href="#event">About</a></li>
+        <li><a href="#eventSchedule">Schedule</a></li>
+        <li><a href="#speakersBio">Speakers</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="https://events.columbia.edu/cal/event/eventView.do?b=de&calPath=%2Fpublic%2Fcals%2FMainCal&guid=CAL-00bbdb71-934dfbb4-0193-4fc06d7e-00004f5bevents@columbia.edu&recurrenceId=" target="_blank" rel="noopener noreferrer">Register</a></li>
       </ul>
-      -->
       <!-- Mobile Menu End -->
     </nav>
   </div>
   <!-- Nav Menu Section End -->
-
-    </header>
+</header>
     <!-- Header Area wrapper End -->
     <!-- #region --> 
     <!-- Main Slider Section Start -->
@@ -231,7 +217,7 @@
                    rel="noopener noreferrer">
                    Lerner Hall Auditorium<br>
                    2920 Broadway<br>
-                   New York, NY 10027<br><br><br><br>
+                   New York, NY 10027<br><br>
                 </a>
                 <p></p>
             </div>
@@ -244,7 +230,7 @@
               </div>
               <div class="desc">
                 <h4><a href="#eventSchedule" class="welcomeEvent">Date & Time</a></h4>
-                <p>March 28th<br> 8:30AM - 5:00PM<br><br><br><br><br></p>
+                <p>March 28th<br> 8:30AM - 5:00PM<br><br><br></p>
                 <p></p>
               </div>
             </div>
@@ -267,7 +253,7 @@
               </div>
               <div class="desc left">
                 <h4>Registrants</h4>
-                <p>240</p>
+                <p>253</p>
                 <p>  </p>
               </div>
             </div>
@@ -421,7 +407,7 @@
 
     <!-- Panelists Modal end -->
 
-    <section class="schedule-section">
+    <section class="schedule-section" id="eventSchedule">
       <h2 class="schedule-title">Program & Schedule</h2>
     
       <div class="session-grid">
@@ -642,7 +628,7 @@
           </div>
           <div class="modal-body">
             <p>
-              <b>Naomi Schrag</b> Naomi Schrag is the Vice President for Research Compliance, Training, and Policy in the Office of the Executive Vice President for Research, and the University's Research Integrity Officer (RIO). She oversees work on issues such as research misconduct, conflict-of-interest and international research compliance, and collaborates closely with other offices across the University to develop integrated approaches to compliance and training.
+              <b>Naomi Schrag</b> is the Vice President for Research Compliance, Training, and Policy in the Office of the Executive Vice President for Research, and the University's Research Integrity Officer (RIO). She oversees work on issues such as research misconduct, conflict-of-interest and international research compliance, and collaborates closely with other offices across the University to develop integrated approaches to compliance and training.
               <br><br>
               Before joining Columbia in January 2006, Ms. Schrag practiced law for nine years, focusing on regulatory compliance and litigation involving biomedical research, with clients including pharmaceutical companies and not-for-profit organizations. Ms. Schrag also clerked in the Court of Appeals for the Second Circuit. Ms. Schrag graduated from New York University School of Law in 1995. Before entering law school, she worked on an oral history of the Holocaust for the Museum of Jewish Heritage. 
             </p>
@@ -1760,6 +1746,131 @@
         setupToggle('question-btn-4', 'iframe-container-4');
       });
     </script>
+
+<script>
+  // Enhanced Mobile Navigation for Symposium Website
+  
+  $(document).ready(function() {
+    // Make sure navigation is visible on mobile
+    function enhanceMobileNav() {
+      var windowWidth = $(window).width();
+      
+      // When on mobile devices
+      if (windowWidth <= 767) {
+        // Ensure #header-wrap is always visible
+        $('#header-wrap').show();
+        
+        // Initialize slicknav if not already initialized
+        if (!$('.slicknav_menu').length) {
+          $('#navbar').slicknav({
+            prependTo: '.navbar-header',
+            parentTag: 'div',
+            closeOnClick: true,
+            label: '',
+            openedSymbol: '&#9660;',
+            closedSymbol: '&#9658;'
+          });
+        }
+        
+        // Make sure roof section is properly displayed
+        if ($('#roof').hasClass('hidden-xs')) {
+          $('#roof').removeClass('hidden-xs');
+        }
+        
+        // Fix navbar collapse behavior
+        $('.navbar-toggle').off('click').on('click', function() {
+          $('.navbar-collapse').slideToggle();
+          return false;
+        });
+      } else {
+        // For desktop view
+        $('.navbar-collapse').show();
+        
+        // Remove any mobile-specific adjustments
+        if ($('.slicknav_menu').is(':visible')) {
+          $('.slicknav_menu').hide();
+        }
+      }
+    }
+    
+    // Initialize on page load
+    enhanceMobileNav();
+    
+    // Re-check when window is resized
+    $(window).resize(function() {
+      enhanceMobileNav();
+    });
+    
+    // Fix for countdown timer responsiveness on mobile
+    function adjustCountdownTimer() {
+      var windowWidth = $(window).width();
+      
+      if (windowWidth <= 767) {
+        // Make time entries more compact on mobile
+        $('.time-entry').css({
+          'min-width': '70px',
+          'padding': '10px',
+          'margin-right': '5px'
+        });
+        
+        // Adjust font size for better display
+        $('.time-entry span').css({
+          'font-size': '28px',
+          'line-height': '28px'
+        });
+      } else {
+        // Reset to default styles for desktop
+        $('.time-entry').css({
+          'min-width': '110px',
+          'padding': '15px 15px 20px 15px',
+          'margin-right': '20px'
+        });
+        
+        $('.time-entry span').css({
+          'font-size': '45px',
+          'line-height': '45px'
+        });
+      }
+    }
+    
+    // Initialize countdown timer adjustments
+    adjustCountdownTimer();
+    
+    // Re-adjust when window is resized
+    $(window).resize(function() {
+      adjustCountdownTimer();
+    });
+    
+    // Fix for background image in pcriLogo section
+    function adjustBackgroundImage() {
+      var windowWidth = $(window).width();
+      
+      if (windowWidth <= 767) {
+        // Adjust background size for better mobile display
+        $('#pcriLogo').css({
+          'background-size': 'contain',
+          'background-position': 'center top',
+          'padding-top': '120px' // Space for the logo
+        });
+      } else {
+        // Reset to default for desktop
+        $('#pcriLogo').css({
+          'background-size': 'cover',
+          'background-position': 'center',
+          'padding-top': '0'
+        });
+      }
+    }
+    
+    // Initialize background image adjustments
+    adjustBackgroundImage();
+    
+    // Re-adjust when window is resized
+    $(window).resize(function() {
+      adjustBackgroundImage();
+    });
+  });
+  </script>
 
     <!-- jQuery Load -->    
     <script src="assets/js/jquery.min.js"></script>

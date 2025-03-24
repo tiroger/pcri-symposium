@@ -3578,3 +3578,138 @@ padding-right: 20px;
   line-height: 20px;
   margin-bottom: 20px;
 }
+
+/* Resources Section Styles */
+/* Resources Section Styles */
+.resource-card {
+  background: #fff;
+  border-radius: 4px;
+  padding: 25px;
+  margin-bottom: 30px;
+  min-height: 350px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  -moz-transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  -o-transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
+}
+
+.resource-card:hover {
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.14);
+}
+
+.resource-header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.resource-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #9BCBEB;
+}
+
+.resource-header h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #2d2d2d;
+  text-transform: uppercase;
+}
+
+.resource-header h5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #777;
+  margin-top: 0;
+}
+
+.resource-content {
+  padding: 0 10px;
+}
+
+.resource-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resource-list li {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #eee;
+}
+
+.resource-list li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.resource-list li a {
+  color: #777777;
+  font-size: 14px;
+  line-height: 1.5;
+  display: block;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.resource-list li a:hover {
+  color: #9BCBEB;
+  text-decoration: none;
+}
+
+.resource-list li a i {
+  margin-right: 10px;
+  color: #9BCBEB;
+}
+
+/* Note about accessing publications */
+.resource-note {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.resource-note p {
+  font-style: italic;
+  color: #999;
+  font-size: 14px;
+}
+
+/* Responsive styles for resources */
+@media (max-width: 992px) {
+  .resource-card {
+    min-height: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .resource-card {
+    min-height: auto;
+  }
+  
+  .resource-header h3 {
+    font-size: 16px;
+  }
+  
+  .resource-header h5 {
+    font-size: 13px;
+  }
+  
+  .resource-list li a {
+    font-size: 13px;
+  }
+  
+  .resource-note p {
+    font-size: 12px;
+    padding: 0 15px;
+  }
+}

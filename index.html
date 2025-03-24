@@ -1597,6 +1597,11 @@
                   <i class="fa fa-file-text-o"></i> Pasquale, F. & Malgieri, G. (2024). "Generative AI, Explainability, and Score-Based Natural Language Processing in Benefits Administration." Journal of Cross-Disciplinary Research in Computational Law, 2(2).
                 </a>
               </li>
+              <li>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  <i class=""></i><br>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -1622,11 +1627,11 @@
                   <i class="fa fa-file-text-o"></i> Lyu, S. (2020). "Deepfake Detection: Current Challenges and Next Steps." IEEE International Conference on Multimedia & Expo Workshops (ICMEW), London, UK.
                 </a>
               </li>
-              <!-- <li>
-                <a href="https://doi.org/10.1145/3433638" target="_blank" rel="noopener noreferrer">
-                  <i class="fa fa-file-text-o"></i> Lyu, S. (2021). "Fighting deepfakes: Media forensics for the AI era." Communications of the ACM, 64(3), 86-95.
+              <li>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  <i class=""></i><br>
                 </a>
-              </li> -->
+              </li>
             </ul>
           </div>
         </div>
@@ -1652,12 +1657,52 @@
                   <i class="fa fa-file-text-o"></i> Mall, U., Phoo, C.P., Liu, M.K., Vondrick, C., Hariharan, B., & Bala, K. (2024). "Remote Sensing Vision-Language Foundation Models Without Annotations via Ground Remote Alignment." arXiv:2312.06960 [cs.CV].
                 </a>
               </li>
-              <!-- <li>
-                <a href="https://www.engineering.cornell.edu/faculty-directory/kavita-bala" target="_blank" rel="noopener noreferrer">
-                  <i class="fa fa-external-link"></i> Additional research publications and information
+              <li>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  <i class=""></i><br>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Despina Kontos Publications -->
+      <div class="col-md-6 col-sm-12">
+        <div class="resource-card wow fadeInRight" data-wow-delay="0.4s">
+          <div class="resource-header">
+            <img src="assets/img/teacher/DespinaKontos.jpg" alt="Despina Kontos" class="resource-avatar">
+            <h3>Despina Kontos</h3>
+            <h5>Professor of Radiological Sciences, Columbia University Irving Medical Center</h5>
+          </div>
+          <div class="resource-content">
+            <ul class="resource-list" id="kontos-publications">
+              <li>
+                <a href="https://ascopubs.org/doi/10.1200/CCI.24.00103" target="_blank" rel="noopener noreferrer">
+                  <i class="fa fa-file-text-o"></i> Ahluwalia, Vinayak S et al. (2024). "Volumetric Breast Density Estimation From Three-Dimensional Reconstructed Digital Breast Tomosynthesis Images Using Deep Learning." JCO clinical cancer informatics vol. 8.
+                </a>
+              </li>
+              <li class="hidden-publication">
+                <a href="https://doi.org/10.1148/radiol.2020192097" target="_blank" rel="noopener noreferrer">
+                  <i class="fa fa-file-text-o"></i> Gastounioti, Aimilia et al. (2022). “Artificial intelligence in mammographic phenotyping of breast cancer risk: a narrative review.” Breast cancer research : BCR vol. 24,1 14. 20 Feb.
+                </a>
+              </li>
+              <li>
+                <a href="https://www.sciencedirect.com/science/article/pii/S1361841521001845?via%3Dihub" target="_blank" rel="noopener noreferrer">
+                  <i class="fa fa-file-text-o"></i> Haji Maghsoudi, Omid et al. (2021). "Deep-LIBRA: An artificial-intelligence method for robust quantification of breast density with independent validation in breast cancer risk assessment." Medical image analysis vol. 73.
+                </a>
+              </li>
+              <!-- <li class="hidden-publication">
+                <a href="https://doi.org/10.1148/ryai.2020190032" target="_blank" rel="noopener noreferrer">
+                  <i class="fa fa-file-text-o"></i> Kontos, D., Summers, R.M., & Giger, M. (2021). "Special Issue on AI and the Future of Biomedical Imaging." Radiology: Artificial Intelligence, 3(2).
                 </a>
               </li> -->
             </ul>
+            <div class="show-more-container">
+              <button class="show-more-btn" data-target="kontos-publications">
+                <i class="fa fa-plus-circle"></i> Show More
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -2519,6 +2564,42 @@ $('#myModal').on('shown.bs.modal', function () {
   $('#myInput').trigger('focus')
 })
       </script>
+
+      <!-- JavaScript for Show More/Less Toggle -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const showMoreButtons = document.querySelectorAll('.show-more-btn');
+    
+    showMoreButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const targetId = this.getAttribute('data-target');
+        const hiddenItems = document.querySelectorAll(`#${targetId} .hidden-publication`);
+        const isExpanded = this.getAttribute('data-expanded') === 'true';
+        
+        if (!isExpanded) {
+          // Show hidden items
+          hiddenItems.forEach(item => {
+            item.style.display = 'block';
+            item.style.animation = 'fadeIn 0.5s';
+          });
+          this.innerHTML = '<i class="fa fa-minus-circle"></i> Show Less';
+          this.setAttribute('data-expanded', 'true');
+        } else {
+          // Hide items
+          hiddenItems.forEach(item => {
+            item.style.animation = 'fadeOut 0.5s';
+            setTimeout(() => {
+              item.style.display = 'none';
+            }, 450);
+          });
+          const count = hiddenItems.length;
+          this.innerHTML = `<i class="fa fa-plus-circle"></i> Show More (${count})`;
+          this.setAttribute('data-expanded', 'false');
+        }
+      });
+    });
+  });
+</script>
 
   </body>
 </html>

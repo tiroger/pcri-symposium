@@ -827,10 +827,11 @@ fieldset[disabled] .btn {
 }
 
 .session-title {
-  color: #6b7280;
+  /* color: #6b7280; */
   font-size: 2rem;
   margin-bottom: 0.5rem;
   font-weight: 800;
+  color: #2d2d2d;
 }
 
 .session-description {
@@ -908,10 +909,10 @@ fieldset[disabled] .btn {
 .badge-session4 { background: #073763; }
 
 .session-title {
-  color: #6b7280;
   font-size: 2rem;
   margin-bottom: 0.5rem;
   font-weight: 800;
+  color: #2d2d2d;
 }
 
 /* .session-description {
@@ -1228,6 +1229,7 @@ h1 {
   font-weight: 400;
   margin-left: -25px;
   margin-right: -25px;
+  color: #777777;
 }
 .speakers-member .member-desc p {
   line-height: 20px;
@@ -1342,9 +1344,10 @@ h1 {
 
 #speaker-name {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 700;
   text-transform: uppercase;
   margin-top: 20px;
+  color: #2d2d2d;
 }
 /* ==========================================================================
    Blog Section Style
@@ -2690,7 +2693,7 @@ padding-right: 20px;
 }
 
 .session-title {
-  color: #6b7280;
+  color: #2d2d2d;
   font-size: 2rem;
   margin-bottom: 0.5rem;
   font-weight: 800;
@@ -2705,7 +2708,8 @@ padding-right: 20px;
 }
 
 .session-summary {
-  color: #6b7280;
+  /* color: #6b7280; */
+  color: #777777;
   font-size: 1.65rem;
 }
 
@@ -2899,6 +2903,7 @@ padding-right: 20px;
     font-size: 2rem; /* Increased from 1.6rem */
     line-height: 1.2;
     margin-bottom: 0.8rem;
+    color: #2d2d2d;
   }
   
   .session-description {
@@ -3572,6 +3577,7 @@ padding-right: 20px;
   font-weight: 400;
   margin-left: -25px;
   margin-right: -25px;
+  color: #777777
 }
 
 .team-member .member-desc p {
@@ -3579,7 +3585,6 @@ padding-right: 20px;
   margin-bottom: 20px;
 }
 
-/* Resources Section Styles */
 /* Resources Section Styles */
 .resource-card {
   background: #fff;
@@ -3711,5 +3716,491 @@ padding-right: 20px;
   .resource-note p {
     font-size: 12px;
     padding: 0 15px;
+  }
+}
+
+/* Enhanced Panelists Modal Styling */
+.panelist-modal {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.panelist-modal .modal-header {
+  background-color: #0749A3;
+  border-bottom: none;
+  padding: 15px 20px;
+}
+
+.panelist-modal .modal-title {
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.panelist-modal .close {
+  color: #fff;
+  opacity: 0.8;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.panelist-modal .close:hover {
+  opacity: 1;
+}
+
+.panelist-modal .modal-body {
+  padding: 25px 30px;
+}
+
+.panelist-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.panelist-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f1f1f1;
+  transition: all 0.3s ease;
+}
+
+.panelist-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.panelist-item:hover {
+  transform: translateX(5px);
+}
+
+.panelist-item i {
+  font-size: 36px;
+  color: #9BCBEB;
+  margin-right: 15px;
+  min-width: 36px;
+}
+
+.panelist-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.panelist-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2d2d2d;
+  margin-bottom: 5px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.panelist-role {
+  font-size: 14px;
+  font-style: italic;
+  color: #9BCBEB;
+  margin-bottom: 5px;
+}
+
+.panelist-title {
+  font-size: 14px;
+  color: #777777;
+  line-height: 1.4;
+  font-family: 'Roboto', sans-serif;
+}
+
+.moderator {
+  background-color: rgba(155, 203, 235, 0.1);
+  padding: 15px;
+  border-radius: 5px;
+  border-left: 3px solid #9BCBEB;
+}
+
+/* Responsive styles for modals */
+@media (max-width: 768px) {
+  .panelist-modal .modal-title {
+    font-size: 18px;
+  }
+  
+  .panelist-name {
+    font-size: 16px;
+  }
+  
+  .panelist-title {
+    font-size: 13px;
+  }
+  
+  .panelist-item i {
+    font-size: 30px;
+    min-width: 30px;
+  }
+  
+  .panelist-modal .modal-body {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-dialog {
+    margin: 0.5rem;
+  }
+  
+  .panelist-item {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+
+/* Enhanced Speaker Bio Modal Styling */
+.bio-modal {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+.bio-modal .modal-header {
+  background: linear-gradient(135deg, #9BCBEB 0%, #0A5D94 100%);
+  border-bottom: none;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bio-modal .modal-title {
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  margin: 0;
+}
+
+.bio-header {
+  display: flex;
+  align-items: center;
+}
+
+.bio-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  margin-right: 20px;
+}
+
+.bio-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.bio-position {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.bio-modal .close {
+  color: #fff;
+  opacity: 0.8;
+  font-size: 28px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.bio-modal .close:hover {
+  opacity: 1;
+}
+
+.bio-modal .modal-body {
+  padding: 30px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.bio-content {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.bio-content p {
+  margin-bottom: 20px;
+}
+
+.bio-content p:last-child {
+  margin-bottom: 0;
+}
+
+.bio-content p b {
+  color: #333;
+  font-weight: 700;
+}
+
+.bio-highlight {
+  background-color: rgba(155, 203, 235, 0.15);
+  border-left: 4px solid #9BCBEB;
+  padding: 15px 20px;
+  margin: 25px 0;
+  border-radius: 0 4px 4px 0;
+  display: flex;
+}
+
+.bio-highlight i {
+  color: #9BCBEB;
+  font-size: 24px;
+  margin-right: 15px;
+  min-width: 24px;
+}
+
+.bio-highlight p {
+  margin: 0;
+  font-size: 16px;
+  font-style: italic;
+  color: #444;
+}
+
+.bio-publications {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 6px;
+  margin: 20px 0;
+}
+
+.bio-publications h6 {
+  color: #333;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.bio-publications h6 i {
+  color: #9BCBEB;
+  margin-right: 8px;
+}
+
+.bio-publications ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.bio-publications li {
+  margin-bottom: 10px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.bio-publications li:last-child {
+  margin-bottom: 0;
+}
+
+.bio-modal .modal-footer {
+  background-color: #f5f5f5;
+  border-top: 1px solid #eee;
+  padding: 15px 30px;
+}
+
+.bio-social {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.bio-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  padding: 8px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin: 0 10px;
+}
+
+.bio-social a:hover {
+  background-color: #9BCBEB;
+  color: #fff;
+}
+
+.bio-social a i {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+/* Scrollbar styling for bio content */
+.bio-modal .modal-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.bio-modal .modal-body::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+  border-radius: 3px;
+}
+
+.bio-modal .modal-body::-webkit-scrollbar-thumb {
+  background-color: #9BCBEB;
+  border-radius: 3px;
+}
+
+/* Responsive styles for bio modals */
+@media (max-width: 768px) {
+  .bio-image {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .bio-modal .modal-title {
+    font-size: 18px;
+  }
+  
+  .bio-position {
+    font-size: 14px;
+  }
+  
+  .bio-content {
+    font-size: 14px;
+  }
+  
+  .bio-modal .modal-body {
+    padding: 20px;
+    max-height: 70vh;
+  }
+  
+  .bio-highlight {
+    padding: 12px 15px;
+  }
+  
+  .bio-highlight i {
+    font-size: 20px;
+  }
+  
+  .bio-publications {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .bio-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 0;
+    width: 100%;
+  }
+  
+  .bio-image {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  
+  .bio-modal .close {
+    top: 10px;
+    right: 10px;
+  }
+  
+  .bio-modal .modal-header {
+    padding: 15px 10px 20px;
+    flex-direction: column;
+  }
+  
+  .bio-modal .modal-body {
+    padding: 15px;
+  }
+  
+  .bio-social a {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+}
+
+/* Additional CSS for Section Titles and Skills Tags */
+.bio-section-title {
+  color: #333;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 25px 0 15px;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+.bio-section-title:first-child {
+  margin-top: 0;
+}
+
+.bio-section-title i {
+  color: #9BCBEB;
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.bio-skills {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 6px;
+  margin: 20px 0;
+}
+
+.bio-skills h6 {
+  color: #333;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.bio-skills h6 i {
+  color: #9BCBEB;
+  margin-right: 8px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background-color: #9BCBEB;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .bio-section-title {
+    font-size: 15px;
+  }
+  
+  .skill-tags {
+    gap: 8px;
+  }
+  
+  .skill-tag {
+    padding: 5px 10px;
+    font-size: 12px;
   }
 }

@@ -317,97 +317,180 @@
 <!--    </section>-->
     <!-- Featured Section End -->
 
-    <!-- Panelists Modal Start -->
-    <div class="modal fade" id="keynote" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Keynote</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
+<!-- Panelists Modal Start -->
+<div class="modal fade" id="keynote" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog modal-lg" role="document">
+    <div class="modal-content panelist-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Keynote</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Keynote content goes here -->
+      </div>
+      <div class="modal-footer">
+        <!-- Footer content if needed -->
+      </div>
+    </div>
+  </div>
+</div>
 
+<div class="modal fade" id="session2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog modal-lg" role="document">
+    <div class="modal-content panelist-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Anatomy of a (Hypothetical) Case of Research Misconduct</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="panelist-list">
+          <div class="panelist-item moderator">
+            <i class="fa fa-user-circle-o"></i>
+            <div class="panelist-info">
+              <span class="panelist-name">Naomi Schrag</span>
+              <span class="panelist-role">Moderator</span>
+              <span class="panelist-title">VP for Research Compliance, Training, & Policy, Columbia University</span>
+            </div>
           </div>
-          <div class="modal-footer">
-            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button> -->
+          <div class="panelist-item">
+            <i class="fa fa-user-circle-o"></i>
+            <div class="panelist-info">
+              <span class="panelist-name">Mark Hansen</span>
+              <span class="panelist-title">Professor, Journalism and Innovation Columbia Journalism School</span>
+            </div>
+          </div>
+          
+          <div class="panelist-item">
+            <i class="fa fa-user-circle-o"></i>
+            <div class="panelist-info">
+              <span class="panelist-name">Ai Yamamoto</span>
+              <span class="panelist-title">Professor, Neurology, Pathology & Cell Biology, Columbia University</span>
+            </div>
+          </div>
+          
+          <div class="panelist-item">
+            <i class="fa fa-user-circle-o"></i>
+            <div class="panelist-info">
+              <span class="panelist-name">Reginald Miller</span>
+              <span class="panelist-title">Dean for Research Operations and Infrastructure, Icahn School of Medicine at Mount Sinai</span>
+            </div>
+          </div>
+          
+          <div class="panelist-item">
+            <i class="fa fa-user-circle-o"></i>
+            <div class="panelist-info">
+              <span class="panelist-name">Maria Blumenkrantz</span>
+              <span class="panelist-title">Graduate Student, Columbia University</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="modal fade" id="session2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Anatomy of a (Hypothetical) Case of Research Misconduct</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <!-- <li>Sheila Garrity (Moderator); Director, HHS Office of Research Integrity</li> -->
-            <li>Mark Hansen; Professor, Journalism and Innovation Columbia Journalism School</li>
-            <li>Ai Yamamoto; Neuroscientist, Columbia University</li>
-            <li>Reginald Miller; Dean for Research Operations and Infrastructure, Icahn School of Medicine at Mount Sinai</li>
-            <li>Maria Blumenkrantz; Graduate Student, Columbia University</li>
-          </div>
-          <div class="modal-footer">
-            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="session3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Retractions, Corrections, Paper Mills, Oh My!</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <li>Arturo Casadevall (Moderator); Chair, Molecular Microbiology & Immunology, Johns Hopkins Bloomberg School of Public Health</li>
-            <li>Kaia Motter; Head of Academic Affairs, North America, Springer Nature</li>
-            <li>Sri Devi Narasimhan; Deputy Editor, Cell</li>
-            <li>Lawrence Lustig; Chair, Otolaryngology, Columbia University</li>
-          </div>
-          <div class="modal-footer">
-            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="session4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Session 4</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <!-- <li>Naomi Schrag (Moderator); VP for Research Compliance, Training, & Policy, Columbia University</li> -->
-            <li>Siwei Lyu; Professor of Computer Science and Engineering, SUNY Albany</li>
-            <li>Frank Pasquale; Professor, Law at Cornell Tech and Cornell Law School</li>
-            <li>Kavita Bala; Professor of Computer Science, Cornell University</li>
-            <li>Despina Kontos; Professor of Radiological Sciencess, Columbia University Irving Medical Center</li>
-          </div>s
-          <div class="modal-footer">
-            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button> -->
-          </div>
-        </div>
-      </div>
-    </div>
-                
+  </div>
+</div>
 
-    <!-- Panelists Modal end -->
+<div class="modal fade" id="session3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog modal-lg" role="document">
+    <div class="modal-content panelist-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Retractions, Corrections, Paper Mills, Oh My!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="panelist-list">
+          <div class="panelist-item moderator">
+            <i class="fa fa-user-circle-o"></i>
+            <div class="panelist-info">
+              <span class="panelist-name">Arturo Casadevall</span>
+              <span class="panelist-role">Moderator</span>
+              <span class="panelist-title">Chair, Molecular Microbiology & Immunology, Johns Hopkins Bloomberg School of Public Health</span>
+            </div>
+          </div>
+          
+          <div class="panelist-item">
+            <i class="fa fa-user-circle-o"></i>
+            <div class="panelist-info">
+              <span class="panelist-name">Kaia Motter</span>
+              <span class="panelist-title">Head of Academic Affairs, North America, Springer Nature</span>
+            </div>
+          </div>
+          
+          <div class="panelist-item">
+            <i class="fa fa-user-circle-o"></i>
+            <div class="panelist-info">
+              <span class="panelist-name">Sri Devi Narasimhan</span>
+              <span class="panelist-title">Deputy Editor, Cell</span>
+            </div>
+          </div>
+          
+          <div class="panelist-item">
+            <i class="fa fa-user-circle-o"></i>
+            <div class="panelist-info">
+              <span class="panelist-name">Lawrence Lustig</span>
+              <span class="panelist-title">Chair, Otolaryngology, Columbia University</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="session4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog modal-lg" role="document">
+    <div class="modal-content panelist-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Decoding the Hype: Practical Impacts of Generative AI in Research</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="panelist-list">
+          <div class="panelist-item moderator">
+            <i class="fa fa-user-circle-o"></i>
+            <div class="panelist-info">
+              <span class="panelist-name">Frank Pasquale</span>
+              <span class="panelist-role">Moderator</span>
+              <span class="panelist-title">Professor, Law at Cornell Tech and Cornell Law School</span>
+            </div>
+          </div>
+          
+          <div class="panelist-item">
+            <i class="fa fa-user-circle-o"></i>
+            <div class="panelist-info">
+              <span class="panelist-name">Siwei Lyu</span>
+              <span class="panelist-title">Professor, Computer Science and Engineering, SUNY Albany</span>
+            </div>
+          </div>
+          
+          <div class="panelist-item">
+            <i class="fa fa-user-circle-o"></i>
+            <div class="panelist-info">
+              <span class="panelist-name">Kavita Bala</span>
+              <span class="panelist-title">Professor, Computer Science, Cornell University</span>
+            </div>
+          </div>
+          
+          <div class="panelist-item">
+            <i class="fa fa-user-circle-o"></i>
+            <div class="panelist-info">
+              <span class="panelist-name">Despina Kontos</span>
+              <span class="panelist-title">Professor, Radiological Sciences, Columbia University Irving Medical Center</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Panelists Modal end -->
 
     <section class="schedule-section" id="eventSchedule">
       <h2 class="schedule-title">Program & Schedule</h2>
@@ -541,432 +624,612 @@
       </div>
     </section>
 
-    <!-- Modal Content Start -->
-    <div class="modal fade" id="erichorvitz" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">ERIC HORVITZ</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+<!-- Modal Content Start -->
+<div class="modal fade" id="erichorvitz" tabindex="-1" role="dialog" aria-labelledby="bioModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog modal-lg" role="document">
+    <div class="modal-content bio-modal">
+      <div class="modal-header">
+        <div class="bio-header">
+          <img src="assets/img/teacher/EricHorvitz.png" alt="Eric Horvitz" class="bio-image">
+          <div class="bio-title">
+            <h5 class="modal-title" id="bioModalTitle">ERIC HORVITZ</h5>
+            <span class="bio-position">Chief Scientific Officer, Microsoft</span>
           </div>
-          <div class="modal-body">
-            <p>
-              <b>Eric Horvitz, MD. PhD</b> serves as Microsoft's Chief Scientific Officer. He spearheads company-wide initiatives, navigating opportunities and challenges at the confluence of scientific frontiers, technology, and society, including strategic efforts in AI, medicine, and the biosciences.<br><br>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="bio-content">
+          <p><b>Eric Horvitz, MD. PhD</b> serves as Microsoft's Chief Scientific Officer. He spearheads company-wide initiatives, navigating opportunities and challenges at the confluence of scientific frontiers, technology, and society, including strategic efforts in AI, medicine, and the biosciences.</p>
+          
+          <p>Dr. Horvitz is known for his contributions to AI theory and practice, with a focus on principles and applications of AI amidst the complexities of the open world. His research endeavors have been direction-setting, including harnessing probability and utility in machine learning and reasoning, developing models of bounded rationality, constructing systems that perceive and act via interpreting multisensory streams of information, and pioneering principles and mechanisms for supporting human-AI collaboration and complementarity. His efforts and collaborations have led to fielded systems in healthcare, transportation, ecommerce, operating systems, and aerospace.</p>
+          
+          <p>Beyond his scientific work, he has pursued programs, organizations, and studies on ethics, values, and safety with applications and influences of AI. He founded and chairs Microsoft's Aether committee on AI, effects, and ethics in engineering and research. He established the One Hundred Year Study on AI at Stanford University and co-founded and serves as board chair of the Partnership on AI (PAI). He served as a Congressionally appointed commissioner on the National Security Commission on AI, where he chaired the line of effort on ethical and trustworthy AI.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="bio-social">
+          <a href="https://erichorvitz.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-globe"></i> Website</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-              Dr. Horvitz is known for his contributions to AI theory and practice, with a focus on principles and applications of AI amidst the complexities of the open world. His research endeavors have been direction-setting, including harnessing probability and utility in machine learning and reasoning, developing models of bounded rationality, constructing systems that perceive and act via interpreting multisensory streams of information, and pioneering principles and mechanisms for supporting human-AI collaboration and complementarity. His efforts and collaborations have led to fielded systems in healthcare, transportation, ecommerce, operating systems, and aerospace.<br><br>
+<div class="modal fade" id="casadevall" tabindex="-1" role="dialog" aria-labelledby="bioModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog modal-lg" role="document">
+    <div class="modal-content bio-modal">
+      <div class="modal-header">
+        <div class="bio-header">
+          <img src="assets/img/teacher/ArturoCasadevall.jpeg" alt="Arturo Casadevall" class="bio-image">
+          <div class="bio-title">
+            <h5 class="modal-title" id="bioModalTitle">ARTURO CASADEVALL</h5>
+            <span class="bio-position">Chair, Molecular Microbiology & Immunology, Johns Hopkins</span>
+          </div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="bio-content">
+          <p><b>Arturo Casadevall, MD, PhD</b> is a Bloomberg Distinguished Professor and Chair of the W. Harry Feinstone Department of Molecular Microbiology and Immunology at the Johns Hopkins Bloomberg School of Public Health. He obtained his B.A. in Chemistry at Queens College of the City University of New York. Previously, he served as Director of the Division of Infectious Diseases at Montefiore Medical Center, the University Hospital and Academic Medical Center for Einstein, from 2000-2006 and as Chair of the Department of Microbiology and Immunology from 2006-2014.</p>
+          
+          <p>Dr. Casadevall received both his M.D. and Ph.D. (biochemistry) degrees from New York University. Subsequently, he completed his internship and residency in internal medicine at Bellevue Hospital in New York. He then completed subspecialty training in infectious diseases at Montefiore and Einstein. The author of over 700 scientific papers, numerous books and book chapters, Dr. Casadevall's major research interests are in fungal pathogenesis and the mechanisms of antibody action. In the area of biodefense, he has an active research program to understand the mechanisms of antibody-mediated neutralization of Bacillus anthracis toxins.</p>
+          
+          <p>In recent years, Dr. Casadevall has become interested in problems with the scientific enterprise and with his collaborators shown that misconduct accounts for the majority of retracted publications. He has suggested a variety of reforms to the way science is done. Dr. Casadevall is the editor-in-chief of mBio, the first open access general journal of the American Society of Microbiology, and is on the editorial board of several journals including the Journal of Infectious Diseases and the Cell Surface.</p>
+          
+          <div class="bio-highlight">
+            <i class="fa fa-quote-left"></i>
+            <p>Dr. Casadevall has been at the forefront of research integrity reform, showing that misconduct accounts for the majority of retracted scientific publications.</p>
+          </div>
+          
+          <p>He has also served in numerous NIH committees including those that drafted the NIAID Strategic Plan and the Blue Ribbon Panel on Biodefense Research. He served on the National Academy of Sciences panel that reviewed the science on the FBI investigation of the anthrax terror attacks of 2001 and has served on the NAS Committee of Federal Regulations and Reporting requirements. He has also served as a member of the National Science Advisory Board for Biosecurity from 2005-2014. In 2008, he was recognized by the American Society of Microbiology with the William Hinton Award for mentoring scientists from underrepresented groups. In 2015, Dr. Casadevall was appointed a Commissioner to the National Commission on Forensic Science, the United States Department of Justice. He has served as President of the Medical Mycology Society of America, Chair of American Society for Microbiology Division F, Chair of the American Society for Microbiology Career Development Committee, Co-Chair of the National Institute of Allergy and Infectious Diseases Board of Scientific Counselors, and currently serves on the Scientific Council/Advisory Board for the Pasteur Institut and VIB Research Institute in Belgium. He is a member of the American Society for Clinical Investigation, American College of Physicians and the Association of American Physicians, and was elected Fellow of the American Association for the Advancement of Science and the American Academy of Microbiology. In 2014, he became an elected member of the National Academy of Medicine and in 2017, he was elected to the American Academy of Arts and Sciences.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="bio-social">
+          <a href="https://publichealth.jhu.edu/faculty/3126/arturo-casadevall" target="_blank" rel="noopener noreferrer"><i class="fa fa-university"></i> Faculty Profile</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-              Beyond his scientific work, he has pursued programs, organizations, and studies on ethics, values, and safety with applications and influences of AI. He founded and chairs Microsoft's Aether committee (opens in new tab) on AI, effects, and ethics in engineering and research. He established the One Hundred Year Study on AI(opens in new tab) at Stanford University and co-founded and serves as board chair of the Partnership on AI(opens in new tab) (PAI).  He served as a Congressionally appointed commissioner on the National Security Commission on AI(opens in new tab), where he chaired the line of effort on ethical and trustworthy AI.<br><br>
-            </p>
+<div class="modal fade" id="pasquale" tabindex="-1" role="dialog" aria-labelledby="bioModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog modal-lg" role="document">
+    <div class="modal-content bio-modal">
+      <div class="modal-header">
+        <div class="bio-header">
+          <img src="assets/img/teacher/FrankPasquale.jpg" alt="Frank Pasquale" class="bio-image">
+          <div class="bio-title">
+            <h5 class="modal-title" id="bioModalTitle">FRANK PASQUALE</h5>
+            <span class="bio-position">Professor of Law, Cornell Tech</span>
           </div>
-          <!-- <div class="modal-footer"> -->
-            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button> -->
-          <!-- </div> -->
         </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-    </div>
-    <div class="modal fade" id="marciamcnutt" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">MARCIA MCNUTT</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>
-              <b>Marcia McNutt</b> is a geophysicist and president of the National Academy of Sciences. From 2013 to 2016, she served as editor-in-chief of the Science journals. Prior to joining Science, she was director of the U.S. Geological Survey (USGS) from 2009 to 2013. During her tenure, the USGS responded to a number of major disasters, including earthquakes in Haiti, Chile, and Japan, and the Deepwater Horizon oil spill. McNutt led a team of government scientists and engineers at BP headquarters in Houston who helped contain the oil and cap the well. She directed the flow rate technical group that estimated the rate of oil discharge during the spill's active phase. For her contributions, she was awarded the U.S. Coast Guard’s Meritorious Service Medal.<br><br>
-              Before joining the USGS, McNutt served as president and chief executive officer of the Monterey Bay Aquarium Research Institute (MBARI), in Moss Landing, California. During her time at MBARI, the institution became a leader in developing biological and chemical sensors for remote ocean deployment, installed the first deep-sea cabled observatory in U.S. waters, and advanced the integration of artificial intelligence into autonomous underwater vehicles for complex undersea missions. <br><br>
-              From 2000 to 2002, McNutt served as president of the American Geophysical Union (AGU). She was chair of the Board of Governors for Joint Oceanographic Institutions, responsible for operating the International Ocean Drilling Program’s vessel JOIDES Resolution and associated research programs. <br><br>
-              McNutt began her academic career at the Massachusetts Institute of Technology (MIT), where she was the E.A. Griswold Professor of Geophysics and directed the Joint Program in Oceanography/Applied Ocean Science & Engineering, jointly offered by MIT and the Woods Hole Oceanographic Institution. Her research area is the dynamics of the upper mantle and lithosphere on geologic time scales, work that has taken her to distant continents and oceans for field observations. She is a veteran of more than a dozen deep-sea expeditions, on most of which she was chief or co-chief scientist. <br><br>
-              McNutt received a B.A. in physics from Colorado College and her Ph.D. in Earth sciences at the Scripps Institution of Oceanography. She holds honorary doctoral degrees from the Colorado College, the University of Minnesota, Monmouth University, the Colorado School of Mines, University of Miami, Uppsala University, Michigan State University, Worcester Polytechnic Institute, George Washington University, Boston University, Texas A&M University, and Indiana University Bloomington. McNutt is a member of the National Academy of Engineering, the American Philosophical Society and the American Academy of Arts and Sciences, and a Foreign Member of the Royal Society, UK, the Russian Academy of Sciences, and the Chinese Academy of Sciences. She is a fellow of AGU, the Geological Society of America, the American Association for the Advancement of Science, and the International Association of Geodesy. In 1988, she was awarded AGU’s Macelwane Medal for research accomplishments by a young scientist, and she received the Maurice Ewing Medal in 2007 for her contributions to deep-sea exploration.
-              </p>
-          </div>
-          <!-- <div class="modal-footer"> -->
-            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button> -->
-          <!-- </div> -->
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="casadevall" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">ARTURO CASADEVALL</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>
-              <b>Arturo Casadevall, MD, PhD</b> is a Bloomberg Distinguished Professor and Chair of the W. Harry Feinstone Department of Molecular Microbiology and Immunology at the Johns Hopkins Bloomberg School of Public Health. He obtained his B.A. in Chemistry at Queens College of the City University of New York. Previously, he served as Director of the Division of Infectious Diseases at Montefiore Medical Center, the University Hospital and Academic Medical Center for Einstein, from 2000-2006 and as Chair of the Department of Microbiology and Immunology from 2006-2014.<br><br>
+      <div class="modal-body">
+        <div class="bio-content">
+          <p><b>Frank Pasquale</b> is Professor of Law at Cornell Tech and Cornell Law School. He is an expert on the law of artificial intelligence (AI), algorithms, and machine learning. His books include The Black Box Society (Harvard University Press, 2015) and New Laws of Robotics (Harvard University Press, 2020). He has published more than 70 journal articles and book chapters on topics ranging from technology policy to health law. He co-edited The Oxford Handbook on the Ethics of Artificial Intelligence (Oxford University Press, 2020) and Transparent Data Mining for Big and Small Data (Springer-Verlag, 2017).</p>
 
-              Dr. Casadevall received both his M.D. and Ph.D. (biochemistry) degrees from New York University. Subsequently, he completed his internship and residency in internal medicine at Bellevue Hospital in New York. He then completed subspecialty training in infectious diseases at Montefiore and Einstein. The author of over 700 scientific papers, numerous books and book chapters, Dr. Casadevall's major research interests are in fungal pathogenesis and the mechanisms of antibody action. In the area of biodefense, he has an active research program to understand the mechanisms of antibody-mediated neutralization of Bacillus anthracis toxins. <br><br>
-              
-              In recent years, Dr. Casadevall has become interested in problems with the scientific enterprise and with his collaborators shown that misconduct accounts for the majority of retracted publications. He has suggested a variety of reforms to the way science is done. Dr. Casadevall is the editor-in-chief of mBio, the first open access general journal of the American Society of Microbiology, and is on the editorial board of several journals including the Journal of Infectious Diseases and the Cell Surface. <br><br>
-              
-              He has also served in numerous NIH committees including those that drafted the NIAID Strategic Plan and the Blue Ribbon Panel on Biodefense Research. He served on the National Academy of Sciences panel that reviewed the science on the FBI investigation of the anthrax terror attacks of 2001 and has served on the NAS Committee of Federal Regulations and Reporting requirements. He has also served as a member of the National Science Advisory Board for Biosecurity from 2005-2014. In 2008, he was recognized by the American Society of Microbiology with the William Hinton Award for mentoring scientists from underrepresented groups. In 2015, Dr. Casadevall was appointed a Commissioner to the National Commission on Forensic Science, the United States Department of Justice. He has served as President of the Medical Mycology Society of America, Chair of American Society for Microbiology Division F, Chair of the American Society for Microbiology Career Development Committee, Co-Chair of the National Institute of Allergy and Infectious Diseases Board of Scientific Counselors, and currently serves on the Scientific Council/Advisory Board for the Pasteur Institut and VIB Research Institute in Belgium. He is a member of the American Society for Clinical Investigation, American College of Physicians and the Association of American Physicians, and was elected Fellow of the American Association for the Advancement of Science and the American Academy of Microbiology. In 2014, he became an elected member of the National Academy of Medicine and in 2017, he was elected to the American Academy of Arts and Sciences.
-            </p>
+          <div class="bio-publications">
+            <h6><i class="fa fa-book"></i> Key Publications</h6>
+            <ul>
+              <li>Pasquale, F. (2020). "New Laws of Robotics: Defending Human Expertise in the Age of AI." Harvard University Press.</li>
+              <li>Zook, M., Barocas, S., boyd, d., Crawford, K., ... Pasquale, F., et al. (2017). "Ten simple rules for responsible big data research." PLOS Computational Biology, 13(3).</li>
+              <li>Pasquale, F. & Malgieri, G. (2024). "Generative AI, Explainability, and Score-Based Natural Language Processing in Benefits Administration." Journal of Cross-Disciplinary Research in Computational Law, 2(2).</li>
+            </ul>
           </div>
-          <div class="modal-footer">
-            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button> -->
-          </div>
+          
+          <p>Before coming to Cornell, Pasquale held chaired professorships at the University of Maryland, Seton Hall University, and Brooklyn Law School. He has also served as a distinguished visiting faculty member at the University of Toronto Faculty of Law, visiting professor at Yale Law School, and visiting fellow at Princeton's Center for Information Technology Policy. He clerked for Judge Kermit V. Lipez of the First Circuit Court of Appeals, and was an associate at Arnold & Porter in Washington, D.C.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="bio-social">
+          <a href="https://www.lawschool.cornell.edu/faculty-research/faculty-directory/frank-pasquale/" target="_blank" rel="noopener noreferrer"><i class="fa fa-university"></i> Faculty Profile</a>
         </div>
       </div>
     </div>
-    <div class="modal fade" id="schrag" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">NAOMI SCHRAG</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>
-              <b>Naomi Schrag</b> is the Vice President for Research Compliance, Training, and Policy in the Office of the Executive Vice President for Research, and the University's Research Integrity Officer (RIO). She oversees work on issues such as research misconduct, conflict-of-interest and international research compliance, and collaborates closely with other offices across the University to develop integrated approaches to compliance and training.
-              <br><br>
-              Before joining Columbia in January 2006, Ms. Schrag practiced law for nine years, focusing on regulatory compliance and litigation involving biomedical research, with clients including pharmaceutical companies and not-for-profit organizations. Ms. Schrag also clerked in the Court of Appeals for the Second Circuit. Ms. Schrag graduated from New York University School of Law in 1995. Before entering law school, she worked on an oral history of the Holocaust for the Museum of Jewish Heritage. 
-            </p>
-          </div>
-          <div class="modal-footer">
-            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="yamamoto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">AI YAMAMOTO</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>
-              <b>Ai Yamamoto, PhD</b> is an Associate Professor in the Departments of Neurology and Pathology and Cell Biology. Dr. Yamamoto became faculty in 2008, after completing her postdoctoral work with Dr. James E. Rothman, and her dissertation work with Dr. Rene Hen. Dr. Yamamoto's work focuses on the cellular events that impact neurological disorders, with a particular focus on how the cellular pathway autophagy impacts the developing and aging brain. Dr. Yamamoto has co-directed and continues to teach for BCMBII (Lectures on Autophagy), and co-directs with Dr. Hemali Phatnani a course on Management Skills and Leadership in Science. Dr. Yamamoto serves as a member of the MSTP Advisory Committee at Columbia University, as well as on several scientific boards including the Hereditary Disease Foundation and the Project ALS. She has served on several NIH study sections, and is currently a permanent member of Cellular Dysfunction in Neurodegeneration (CDIN). She has been a co-director of the Neurobiology and Behavior Graduate program since 2018.
-            </p>
-          </div>
-          <div class="modal-footer">
-            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="miller" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">REGINALD MILLER</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>
-              <b>Dr. Reginald W. Miller</b> serves as the Dean for Research Operations and Infrastructure and is responsible for the oversight of ISMMS Biosafety, Environmental Health and Safety, Laboratory Safety including the Select Agents and Toxins Program (Operations), Core Facilities and Shared Resources (Vivarium) as well as Basic Science Laboratory Infrastructure (Infrastructure).<br><br>
-              Dr. Miller is also the Senior Research Integrity Officer (RIO) for the Mount Sinai Health System. In this role, he is responsible for ensuring that a program on the Responsible Conduct of Research is in place, which includes conducting reviews of allegations of research misconduct as necessary to help students and faculty understand the regulatory and institutional expectations placed upon scientists in conducting research.<br><br>
-              He is also the Chief Export Controls Officer (ECO) for the Mount Sinai Health System. Responsibilities within this role include ensuring government guidance and policies for research compliance are followed throughout Mount Sinai.<br><br>
-              Dr. Miller's other roles at Mount Sinai included serving as the Co-Chair for the Diversity in Biomedical Research Council, and Professor roles for Comparative Medicine and Surgery as well as for Environmental Medical and Public Health.
-            </p>
-          </div>
-          <div class="modal-footer">
-            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="elsadr" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">WAFAA EL-SADR</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>
-              <b>Wafaa El-Sadr</b> is University Professor of Epidemiology and Medicine, Director of ICAP at Columbia University, Director of Columbia World Projects and the Mathilde Krim-amfAR Professor of Global Health at the Columbia Mailman School of Public Health.<br><br> 
-              Her work through ICAP in more than 30 countries around the world integrates research, education, training and program design, implementation, scale-up and evaluation. It aims to address major public health challenges through partnership, innovation and collaboration. As the director of Columbia World Projects, she oversees a University-wide initiative which aims at taking scholarly work into action. Dr. El-Sadr is also a principal investigator of the NIH-funded HIV Prevention Trials Network (HPTN).<br><br>
-              Dr. El-Sadr received her medical degree from Cairo University in Egypt, a masters degree in public health (Epidemiology) from Columbia Mailman School of Public Health and a masters degree in public administration from the Harvard University Kennedy School of Government. She was named a McArthur fellow in 2008, is a member of the National Academy of Medicine in 2009, a fellow of the African Academy of Sciences in 2018 and a member of the Council for Foreign Relations in 2021.</p>
-          </div>
-          <div class="modal-footer">
-            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="wing" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">JEANNETTE M. WING</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>
-              <b>Jeannette M. Wing</b> is the Executive Vice President for Research at Columbia University and Professor of Computer Science. In her EVPR role, she has overall responsibility for the University’s research enterprise at all New York locations and internationally. The New York locations include the Morningside and Manhattanville campuses, Columbia University Irving Medical Center, Lamont-Doherty Earth Observatory, and Nevis Laboratories. She joined Columbia in 2017 as the inaugural Avanessians Director of the Data Science Institute.
-              Prior to Columbia, Dr. Wing was Corporate Vice President of Microsoft Research, served on the faculty and as department head in computer science at Carnegie Mellon University, and served as Assistant Director for Computer and Information Science and Engineering at the National Science Foundation.<br><br>
-              Dr. Wing's research contributions have been in the areas of trustworthy AI, security and privacy, specification and verification, concurrent and distributed systems, programming languages, and software engineering. Her 2006 seminal essay, titled "Computational Thinking,’’ is credited with helping to establish the centrality of computer science to problem-solving in fields where previously it had not been embraced, and thereby influencing K-12 and university curricula worldwide.<br><br>
-              She is a Fellow of the American Academy of Arts and Sciences, American Association for the Advancement of Science, the Association for Computing Machinery (ACM), and the Institute of Electrical and Electronic Engineers. She received distinguished service awards from the ACM and the Computing Research Association and an honorary doctorate degree from Linköping University, Sweden. She earned her bachelor's, master’s, and doctoral degrees in computer science, all from the Massachusetts Institute of Technology.
-            </p>
-          </div>
-          <div class="modal-footer">
-            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="motter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">KAIA MOTTER</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>
-              <b>Kaia Motter</b> is Head of Academic Affairs, North America at Springer Nature where she leads academic affairs activities in the US and Canada, building relationships and collaborating with funders, institutions, and other non-profit organizations in the region. Kaia has a background in publishing, having held editorial positions at Elsevier and Wiley. In recent years, her work has been centered on open science development, policy, and outreach with a topical focus on research assessment reform, research integrity, AI, and other issues impacting the research community.
-            </p>
-          </div>
-          <div class="modal-footer">
-            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="lustig" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">LAWRENCE LUSTIG</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>
-              <b>Lawrence Lustig, MD</b> is an Otolaryngologist who specializes in Otology, Neurotology and Skull Base Surgery.  Dr Lustig grew up in Northern California, and completed his undergraduate studies at the University of California at Berkeley.  He graduated from the University of California at San Francisco (UCSF) School of Medicine, where he also completed his Otolaryngology residency.  After residency, Dr Lustig completed his Neurotology and Skull Base Surgery Fellowship at Johns Hopkins University and remained on staff at Johns Hopkins through 2004.  In 2004 he was recruited back to UCSF to lead the Division of Otology and Neurotology in the Otolaryngology Department.  In 2014, he was recruited to Columbia University and New York Presbyterian Hospital where he practices today as the Howard W. Smith Professor and Chair of the Department of Otolaryngology.<br><br>
-              Dr. Lustig's interdisciplinary research has helped pioneer cochlear gene therapy for genetic forms of hearing loss. He is also one of the lead investigators for the Otoferlin gene therapy trial sponsored by Regeneron. Prior work in his lab has included studies on cochlear bone development and how the material properties of bone enclosing the inner ear contribute to hearing. Dr. Lustig is considered one of the foremost authorities on cochlear implants in the United States. Dr. Lustig has published more than 125 articles in peer-reviewed journals, as well as numerous book chapters. He has co-edited several textbooks, including “Clinical Neurotology: Diagnosing and Managing Disorders of Hearing, Balance and the Facial Nerve” and “Disorders of the Vestibular System. He currently serves as the Editor-in-Chief of Otology & Neurotology, the foremost medical journal in his subspeciality.
-            </p>
-          </div>
-          <div class="modal-footer">
-            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="pasquale" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">FRANK PASQUALE</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>
-              <b>Frank Pasquale</b> is Professor of Law at Cornell Tech and Cornell Law School. He is an expert on the law of artificial intelligence (AI), algorithms, and machine learning. His books include The Black Box Society (Harvard University Press, 2015) and New Laws of Robotics (Harvard University Press, 2020). He has published more than 70 journal articles and book chapters on topics ranging from technology policy to health law. He co-edited The Oxford Handbook on the Ethics of Artificial Intelligence (Oxford University Press, 2020) and Transparent Data Mining for Big and Small Data (Springer-Verlag, 2017).
-              <br><br>
-              Before coming to Cornell, Pasquale held chaired professorships at the University of Maryland, Seton Hall University, and Brooklyn Law School. He has also served as a distinguished visiting faculty member at the University of Toronto Faculty of Law, visiting professor at Yale Law School, and visiting fellow at Princeton’s Center for Information Technology Policy. He clerked for Judge Kermit V. Lipez of the First Circuit Court of Appeals, and was an associate at Arnold & Porter in Washington, D.C.. 
-            </p>
-          </div>
-          <div class="modal-footer">
-            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="lyu" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">SIWEI LYU</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>
-              <b>Siwei Lyu, PhD</b> is a SUNY Empire Innovation Professor at the Department of Computer Science and Engineering, the Director of the UB Media Forensic Lab (UB MDFL), and the founding Co-Director of the Center for Information Integrity (CII) at the University at Buffalo, State University of New York, USA.<br><br>
-              Before joining UB, Dr. Lyu served as an Assistant Professor (2008-2014), tenured Associate Professor (2014-2019), and Full Professor (2019-2020) at the Department of Computer Science at the University at Albany, State University of New York. He is the Founding Director of UAlbany's Computer Vision and Machine Learning Lab (CVML). From 2005 to 2008, he worked as a Post-Doctoral Research Associate at the Howard Hughes Medical Institute and the Center for Neural Science at New York University. In 2001, he was an Assistant Researcher at Microsoft Research Asia. Dr. Lyu earned his Ph.D. in Computer Science from Dartmouth College in 2005 and both his M.S. (2000) and B.S. (1997) degrees in Computer Science and Information Science, respectively, from Peking University, China.<br><br>
-              Dr. Lyu's research interests include media forensics, computer vision, and machine learning. He has published over 190 refereed journal and conference papers. His research projects are funded by NSF, DARPA, and the US Department of Homeland Security. Dr. Lyu has received numerous awards, such as the IEEE Signal Processing Society Best Paper Award (2011), the National Science Foundation CAREER Award (2010), SUNY Albany's Presidential Award for Excellence in Research and Creative Activities (2017), SUNY Chancellor's Award for Excellence in Research and Creative Activities (2018), Google Faculty Research Award (2019), and IEEE Region 1 Technological Innovation (Academic) Award (2021).<br><br>
-              Dr. Lyu has served on the IEEE Signal Processing Society's Information Forensics and Security Technical Committee and held editorial positions with several prestigious journals. Dr. Lyu holds prestigious memberships and distinctions, including being a Fellow of IEEE, IAPR, and AAIA. He is also a Distinguished Member of ACM, a Senior Member of the Sigma Xi Society, and a Member of the Omicron Delta Kappa society.<br><br>
-            </p>
-          </div>
-          <div class="modal-footer">
-            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="estrin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">DEBORAH ESTRIN</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>
-              <b>Deborah Estrin, PhD</b> is a Professor of Computer Science at Cornell Tech in New York City where she holds The Robert V. Tishman Founder's Chair, serves as the Associate Dean for Impact, and is an Affiliate Faculty at Weill Cornell Medicine. Estrin founded the Public Interest Technology Initiative (PiTech) at Cornell Tech, which promotes meaningful public impact as a component of students' training and future careers. Estrin's current research activities are in the area of Digital Health Technology, including emerging technologies for caregiving, and small data.
-            </p>
-          </div>
-          <div class="modal-footer">
-            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="kontos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">DESPINA KONTOS</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>
-              <b>Despine Kontos, PhD</b> is a computer scientist with expertise in artificial intelligence, machine learning, and big data analytics for multi-modality imaging data. She is the chief research information officer for Columbia University Irving Medical Center (CUIMC). She is also the vice chair of artificial intelligence and data science research in the Department of Radiology at CUIMC and director of biomarker imaging at NewYork-Presbyterian Hospital—with additional appointments in the Departments of Biomedical Informatics and Biomedical Engineering.<br><br>
-              Dr. Kontos is the founding director of Columbia University's Center for Innovation in Imaging Biomarkers and Integrated Diagnostics (CIMBID), a multidisciplinary center dedicated to developing and integrating quantitative imaging and non-imaging biomarkers for personalized disease prediction, particularly in cancer.<br><br>
-              Dr. Kontos has made seminal contributions to the leveraging of artificial intelligence tools for risk prediction in breast and lung cancer. Her research program focuses on investigating the role of imaging as a quantitative biomarker for improving cancer screening, prognostication, and treatment. She has developed innovative computational methodologies that have enabled the investigation of novel cancer phenotypic biomarkers via imaging, and has translated these biomarkers through extensive clinical and epidemiologic studies to answer important research questions for personalizing cancer care.<br><br>
-              With a primary focus on breast cancer, her work has contributed to a fundamental transition in the interpretation of breast cancer images, by showing that imaging data can be mined to extract sophisticated phenotypic signatures with independent diagnostic, prognostic, and predictive value. Her lab is also pursuing related research in lung cancers, specifically on evaluating the integration of CT radiomic features with liquid biopsy data to characterize lung tumor heterogeneity for predicting response to targeted therapy and immunotherapy.<br><br>
-              Dr. Kontos is the recipient of numerous grants from both federal agencies and private foundations, including the National Institutes of Health (NIH), the Department of Defense (DOD), the American Cancer Society (ACS), and the Radiological Society of North America (RSNA). She is the author of more than 100 publications in high-impact journals, and her lectures have gained national recognition.<br><br>
-              Dr. Kontos studied engineering as an undergraduate at the University of Patras in Greece. She received her PhD in computer and information sciences from Temple University in Philadelphia, followed by postdoc training in radiology at the University of Pennsylvania. She has certificates in Biostatistics and Epidemiology from the University of Pennsylvania; Cancer Biology and Targeted Therapeutics from Harvard University; and AI for Decision Making: Business Strategies and Applications from the Wharton School of Business. Dr. Kontos is a member of the RSNA Research & Education Foundation Fund Development Committee.
-            </p>
-          </div>
-          <div class="modal-footer">
-            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="hansen" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">MARK HANSEN</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>
-              <b>Mark Hansen</b> is the David and Helen Gurley Brown Professor of Journalism and Innovation and Director of the David and Helen Gurley Brown Institute for Media Innovation<br><br>
-              Mark Hansen joined Columbia Journalism School in July 2012 and took on the position of inaugural director of the east coast branch of the Brown Institute for Media Innovation. Prior to joining Columbia, he was a professor at UCLA, holding appointments in the Department of Statistics, the Department of Design Media Arts and the Department of Electrical Engineering.  He was also a Co-PI for Center for Embedded Networked Sensing, an NSF Science and Technology Center devoted to the study of sensor networks. Prior to UCLA, Hansen was a Member of the Technical Staff at Bell Laboratories in Murray Hill, New Jersey.<br><br>
-              For nearly three decades, Hansen has been working at the intersection of data, art and technology. Hansen has an active art practice involving the presentation of data for the public. His work with Ben Rubin, Jer Thorp and The Office for Creative Research has been exhibited at the Museum of Modern Art in New York, the Whitney Museum, the Centro de Arte Reina Sofia, the London Science Museum, the Cartier Foundation in Paris, and the lobbies of the New York Times building and the Public Theater (permanent displays) in Manhattan.<br><br>
-              In terms of his journalistic experience, Hansen has been a long-standing visiting researcher at the New York Times R&D Lab, a late-career intern at the Marshall Project, and a consultant with HBO Sports. Hansen teaches mainly advanced data analysis and computational journalism at Columbia. In 2018, Hansen's Computational Journalism course at Columbia Journalism School contributed the original reporting for the New York Times' piece, <a href="https://www.nytimes.com/interactive/2018/01/27/technology/social-media-bots.html">The Follower Factory</a>, which exposed the bot economy behind the sale of fake followers on Twitter. In July 2018, the article was cited by Twitter as the reason for its “purge” of tens of millions of suspicious accounts.<br><br>
-              Hansen holds a B.S. in Applied Math from the University of California, Davis, and a Ph.D and M.A. in Statistics from the University of California, Berkeley. He has been awarded eight patents and has published over 60 papers in data science, statistics and computer science.
-            </p>
-          </div>
-          <div class="modal-footer">
-            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="narasimhan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">SRI DEVI NARASIMHAN</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>
-              <b>Sri Narasimhan</b> is Deputy Editor at Cell where she leads journal strategy, inclusion and diversity efforts as well as publication of microbiology, immunology and metabolism content. She also oversees Cell's connection with Cell Press and manages cross-journal communication and collaboration initiatives in the organization. Sri trained in microbiology, molecular genetics and metabolism at the National University of Singapore, UMASS Medical School and Harvard Medical School before joining Cell Press in 2012. She is based in Cambridge, Massachusetts.  
-            </p>
-          </div>
-          <div class="modal-footer">
-            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="blumenkrantz" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">MARIA BLUMENKRANTZ</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>
-              <b>Maria Blumenkrantz</b> is a 4th year PhD Candidate in the Cell, Molecular, and Biomedical Studies (CMBS) program at the Columbia University Irving Medical Center. Maria is pursuing her thesis work in Dr. Joanna Smeeton’s lab, where she uses zebrafish to study cellular and molecular mechanisms driving joint regeneration.  
-            </p>
-          </div>
-          <div class="modal-footer">
-            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="bala" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">KAVITA BALA</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>
-              <b>Kavita Bala</b> is the Dean of the Cornell Ann S. Bowers College of Computing and Information Science (Cornell Bowers CIS). She received her S.M. and Ph.D. from the Massachusetts Institute of Technology (MIT), and her B.Tech. from the Indian Institute of Technology (IIT, Bombay).
-              <br><br>
-              Bala specializes in computer vision and computer graphics, leading research projects in recognition and visual search; material modeling and acquisition; realistic, physically-based rendering; and material perception. Bala's research has been adopted by industry in Autodesk's core rendering engine, and she co-founded GrokStyle, a visual recognition AI company, which began as a vision search and shopping tool integrated with IKEA's Augmented Reality application, and was subsequently acquired by Facebook in 2019.
-              <br><br>
-              Bala has been recognized for her research with a variety of awards and accolades including: the SIGGRAPH Computer Graphics Achievement Award (2020); the IIT Bombay Distinguished Alumnus Award (2021); she is an Association for Computing Machinery (ACM) Fellow (2019); and is a Fellow of the SIGGRAPH Academy (2020).
-              <br><br>
-              Bala is on the Board of Directors of ColorStack, an organization that aims to increase the number of Black and Latinx Computer Science graduates that go on to rewarding technical careers, the Board of Trustees of Toyota Technological Institute at Chicago (TTIC), the Advisory Board for ACM Transactions on Graphics, the Papers Advisory Group for SIGGRAPH, and has served on over 60 editorial boards, advisory boards, and program committees in vision and graphics. Bala also co-authored the graduate-level textbook "Advanced Global Illumination.” Her work on 3D Mandalas was featured at the Rubin Museum of Art, New York. She has also received Cornell's College of Engineering Fiona Li and Donald Li Excellence in Teaching Award (2015), James and Mary Tien Excellence in Teaching Award (2006 and 2009).
-            </p>
-          </div>
-          <div class="modal-footer">
-            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    
+  </div>
+</div>
 
-    <!-- Modal Content End -->
+<div class="modal fade" id="lyu" tabindex="-1" role="dialog" aria-labelledby="bioModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog modal-lg" role="document">
+    <div class="modal-content bio-modal">
+      <div class="modal-header">
+        <div class="bio-header">
+          <img src="assets/img/teacher/SiweiLyu.png" alt="Siwei Lyu" class="bio-image">
+          <div class="bio-title">
+            <h5 class="modal-title" id="bioModalTitle">SIWEI LYU</h5>
+            <span class="bio-position">Professor, Computer Science and Engineering, SUNY Albany</span>
+          </div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="bio-content">
+          <p><b>Siwei Lyu, PhD</b> is a SUNY Empire Innovation Professor at the Department of Computer Science and Engineering, the Director of the UB Media Forensic Lab (UB MDFL), and the founding Co-Director of the Center for Information Integrity (CII) at the University at Buffalo, State University of New York, USA.</p>
+          
+          <div class="bio-publications">
+            <h6><i class="fa fa-file-text-o"></i> Recent Research</h6>
+            <ul>
+              <li>Lyu, S. (2024). "DeepFake the menace: mitigating the negative impacts of AI-generated content." Organizational Cybersecurity Journal: Practice, Process and People, 4(1), 1-18.</li>
+              <li>Lyu, S. (2020). "Deepfake Detection: Current Challenges and Next Steps." IEEE International Conference on Multimedia & Expo Workshops (ICMEW), London, UK.</li>
+              <li>Lyu, S. (2021). "Fighting deepfakes: Media forensics for the AI era." Communications of the ACM, 64(3), 86-95.</li>
+            </ul>
+          </div>
+          
+          <p>Before joining UB, Dr. Lyu served as an Assistant Professor (2008-2014), tenured Associate Professor (2014-2019), and Full Professor (2019-2020) at the Department of Computer Science at the University at Albany, State University of New York. He is the Founding Director of UAlbany's Computer Vision and Machine Learning Lab (CVML). From 2005 to 2008, he worked as a Post-Doctoral Research Associate at the Howard Hughes Medical Institute and the Center for Neural Science at New York University. In 2001, he was an Assistant Researcher at Microsoft Research Asia. Dr. Lyu earned his Ph.D. in Computer Science from Dartmouth College in 2005 and both his M.S. (2000) and B.S. (1997) degrees in Computer Science and Information Science, respectively, from Peking University, China.</p>
+          
+          <p>Dr. Lyu's research interests include media forensics, computer vision, and machine learning. He has published over 190 refereed journal and conference papers. His research projects are funded by NSF, DARPA, and the US Department of Homeland Security. Dr. Lyu has received numerous awards, such as the IEEE Signal Processing Society Best Paper Award (2011), the National Science Foundation CAREER Award (2010), SUNY Albany's Presidential Award for Excellence in Research and Creative Activities (2017), SUNY Chancellor's Award for Excellence in Research and Creative Activities (2018), Google Faculty Research Award (2019), and IEEE Region 1 Technological Innovation (Academic) Award (2021).</p>
+          
+          <p>Dr. Lyu has served on the IEEE Signal Processing Society's Information Forensics and Security Technical Committee and held editorial positions with several prestigious journals. Dr. Lyu holds prestigious memberships and distinctions, including being a Fellow of IEEE, IAPR, and AAIA. He is also a Distinguished Member of ACM, a Senior Member of the Sigma Xi Society, and a Member of the Omicron Delta Kappa society.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="bio-social">
+          <a href="https://cse.buffalo.edu/~siweilyu/" target="_blank" rel="noopener noreferrer"><i class="fa fa-globe"></i> Website</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="bala" tabindex="-1" role="dialog" aria-labelledby="bioModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog modal-lg" role="document">
+    <div class="modal-content bio-modal">
+      <div class="modal-header">
+        <div class="bio-header">
+          <img src="assets/img/teacher/KavitaBala.png" alt="Kavita Bala" class="bio-image">
+          <div class="bio-title">
+            <h5 class="modal-title" id="bioModalTitle">KAVITA BALA</h5>
+            <span class="bio-position">Professor of Computer Science, Cornell University</span>
+          </div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="bio-content">
+          <p><b>Kavita Bala</b> is the Dean of the Cornell Ann S. Bowers College of Computing and Information Science (Cornell Bowers CIS). She received her S.M. and Ph.D. from the Massachusetts Institute of Technology (MIT), and her B.Tech. from the Indian Institute of Technology (IIT, Bombay).</p>
+          
+          <div class="bio-publications">
+            <h6><i class="fa fa-file-text-o"></i> Recent Research</h6>
+            <ul>
+              <li>Mall, U., Phoo, C.P., Chiquier, M., Hariharan, B., Bala, K., & Vondrick, C. (2024). "DiSciPLE: Learning Interpretable Programs for Scientific Visual Discovery." ICLR 2024.</li>
+              <li>Mall, U., Phoo, C.P., Liu, M.K., Vondrick, C., Hariharan, B., & Bala, K. (2024). "Remote Sensing Vision-Language Foundation Models Without Annotations via Ground Remote Alignment." ICLR 2024.</li>
+            </ul>
+          </div>
+          
+          <p>Bala specializes in computer vision and computer graphics, leading research projects in recognition and visual search; material modeling and acquisition; realistic, physically-based rendering; and material perception. Bala's research has been adopted by industry in Autodesk's core rendering engine, and she co-founded GrokStyle, a visual recognition AI company, which began as a vision search and shopping tool integrated with IKEA's Augmented Reality application, and was subsequently acquired by Facebook in 2019.</p>
+          
+          <div class="bio-highlight">
+            <i class="fa fa-trophy"></i>
+            <p>Bala has received numerous awards including the SIGGRAPH Computer Graphics Achievement Award (2020) and the IIT Bombay Distinguished Alumnus Award (2021).</p>
+          </div>
+          
+          <p>Bala has been recognized for her research with a variety of awards and accolades including: the SIGGRAPH Computer Graphics Achievement Award (2020); the IIT Bombay Distinguished Alumnus Award (2021); she is an Association for Computing Machinery (ACM) Fellow (2019); and is a Fellow of the SIGGRAPH Academy (2020).</p>
+          
+          <p>Bala is on the Board of Directors of ColorStack, an organization that aims to increase the number of Black and Latinx Computer Science graduates that go on to rewarding technical careers, the Board of Trustees of Toyota Technological Institute at Chicago (TTIC), the Advisory Board for ACM Transactions on Graphics, the Papers Advisory Group for SIGGRAPH, and has served on over 60 editorial boards, advisory boards, and program committees in vision and graphics. Bala also co-authored the graduate-level textbook "Advanced Global Illumination." Her work on 3D Mandalas was featured at the Rubin Museum of Art, New York. She has also received Cornell's College of Engineering Fiona Li and Donald Li Excellence in Teaching Award (2015), James and Mary Tien Excellence in Teaching Award (2006 and 2009).</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="bio-social">
+          <a href="https://www.engineering.cornell.edu/faculty-directory/kavita-bala" target="_blank" rel="noopener noreferrer"><i class="fa fa-university"></i> Faculty Profile</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="marciamcnutt" tabindex="-1" role="dialog" aria-labelledby="bioModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog modal-lg" role="document">
+    <div class="modal-content bio-modal">
+      <div class="modal-header">
+        <div class="bio-header">
+          <img src="assets/img/teacher/MarciaMcNutt.jpg" alt="Marcia McNutt" class="bio-image">
+          <div class="bio-title">
+            <h5 class="modal-title" id="bioModalTitle">MARCIA MCNUTT</h5>
+            <span class="bio-position">President, National Academy of Sciences</span>
+          </div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="bio-content">
+          <p><b>Marcia McNutt</b> is a geophysicist and president of the National Academy of Sciences. From 2013 to 2016, she served as editor-in-chief of the Science journals. Prior to joining Science, she was director of the U.S. Geological Survey (USGS) from 2009 to 2013.</p>
+          
+          <div class="bio-highlight">
+            <i class="fa fa-quote-left"></i>
+            <p>During her tenure at the USGS, McNutt led a team of government scientists and engineers at BP headquarters in Houston who helped contain the oil and cap the well during the Deepwater Horizon oil spill.</p>
+          </div>
+          
+          <p>During her tenure, the USGS responded to a number of major disasters, including earthquakes in Haiti, Chile, and Japan, and the Deepwater Horizon oil spill. McNutt led a team of government scientists and engineers at BP headquarters in Houston who helped contain the oil and cap the well. She directed the flow rate technical group that estimated the rate of oil discharge during the spill's active phase. For her contributions, she was awarded the U.S. Coast Guard's Meritorious Service Medal.</p>
+          
+          <p>Before joining the USGS, McNutt served as president and chief executive officer of the Monterey Bay Aquarium Research Institute (MBARI), in Moss Landing, California. During her time at MBARI, the institution became a leader in developing biological and chemical sensors for remote ocean deployment, installed the first deep-sea cabled observatory in U.S. waters, and advanced the integration of artificial intelligence into autonomous underwater vehicles for complex undersea missions.</p>
+          
+          <p>From 2000 to 2002, McNutt served as president of the American Geophysical Union (AGU). She was chair of the Board of Governors for Joint Oceanographic Institutions, responsible for operating the International Ocean Drilling Program's vessel JOIDES Resolution and associated research programs.</p>
+          
+          <p>McNutt began her academic career at the Massachusetts Institute of Technology (MIT), where she was the E.A. Griswold Professor of Geophysics and directed the Joint Program in Oceanography/Applied Ocean Science & Engineering, jointly offered by MIT and the Woods Hole Oceanographic Institution. Her research area is the dynamics of the upper mantle and lithosphere on geologic time scales, work that has taken her to distant continents and oceans for field observations. She is a veteran of more than a dozen deep-sea expeditions, on most of which she was chief or co-chief scientist.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="bio-social">
+          <a href="https://www.nasonline.org/directory-entry/marcia-mcnutt-6apamq/" target="_blank" rel="noopener noreferrer"><i class="fa fa-university"></i> NAS Profile</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="blumenkrantz" tabindex="-1" role="dialog" aria-labelledby="bioModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog modal-lg" role="document">
+    <div class="modal-content bio-modal">
+      <div class="modal-header">
+        <div class="bio-header">
+          <img src="assets/img/teacher/MariaBlumenkrantz.jpg" alt="Maria Blumenkrantz" class="bio-image">
+          <div class="bio-title">
+            <h5 class="modal-title" id="bioModalTitle">MARIA BLUMENKRANTZ</h5>
+            <span class="bio-position">Graduate Student, Columbia University</span>
+          </div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="bio-content">
+          <p><b>Maria Blumenkrantz</b> is a 4th year PhD Candidate in the Cell, Molecular, and Biomedical Studies (CMBS) program at the Columbia University Irving Medical Center.</p>
+          
+          <div class="bio-highlight">
+            <i class="fa fa-flask"></i>
+            <p>Maria is pursuing her thesis work in Dr. Joanna Smeeton's lab, where she uses zebrafish to study cellular and molecular mechanisms driving joint regeneration.</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="bio-social">
+          <a href="https://www.linkedin.com/in/maria-blumenkrantz-a11882199" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i> LinkedIn Profile</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="hansen" tabindex="-1" role="dialog" aria-labelledby="bioModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog modal-lg" role="document">
+    <div class="modal-content bio-modal">
+      <div class="modal-header">
+        <div class="bio-header">
+          <img src="assets/img/teacher/cu_journalism_school.jpg" alt="Mark Hansen" class="bio-image">
+          <div class="bio-title">
+            <h5 class="modal-title" id="bioModalTitle">MARK HANSEN</h5>
+            <span class="bio-position">Professor, Journalism and Innovation, Columbia Journalism School</span>
+          </div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="bio-content">
+          <p><b>Mark Hansen</b> is the David and Helen Gurley Brown Professor of Journalism and Innovation and Director of the David and Helen Gurley Brown Institute for Media Innovation.</p>
+          
+          <p>Mark Hansen joined Columbia Journalism School in July 2012 and took on the position of inaugural director of the east coast branch of the Brown Institute for Media Innovation. Prior to joining Columbia, he was a professor at UCLA, holding appointments in the Department of Statistics, the Department of Design Media Arts and the Department of Electrical Engineering. He was also a Co-PI for Center for Embedded Networked Sensing, an NSF Science and Technology Center devoted to the study of sensor networks. Prior to UCLA, Hansen was a Member of the Technical Staff at Bell Laboratories in Murray Hill, New Jersey.</p>
+          
+          <div class="bio-highlight">
+            <i class="fa fa-paint-brush"></i>
+            <p>For nearly three decades, Hansen has been working at the intersection of data, art and technology, with installations at museums including MoMA, the Whitney Museum, and the Centro de Arte Reina Sofia.</p>
+          </div>
+          
+          <p>For nearly three decades, Hansen has been working at the intersection of data, art and technology. Hansen has an active art practice involving the presentation of data for the public. His work with Ben Rubin, Jer Thorp and The Office for Creative Research has been exhibited at the Museum of Modern Art in New York, the Whitney Museum, the Centro de Arte Reina Sofia, the London Science Museum, the Cartier Foundation in Paris, and the lobbies of the New York Times building and the Public Theater (permanent displays) in Manhattan.</p>
+          
+          <p>In terms of his journalistic experience, Hansen has been a long-standing visiting researcher at the New York Times R&D Lab, a late-career intern at the Marshall Project, and a consultant with HBO Sports. Hansen teaches mainly advanced data analysis and computational journalism at Columbia. In 2018, Hansen's Computational Journalism course at Columbia Journalism School contributed the original reporting for the New York Times' piece, <a href="https://www.nytimes.com/interactive/2018/01/27/technology/social-media-bots.html">The Follower Factory</a>, which exposed the bot economy behind the sale of fake followers on Twitter. In July 2018, the article was cited by Twitter as the reason for its "purge" of tens of millions of suspicious accounts.</p>
+          
+          <p>Hansen holds a B.S. in Applied Math from the University of California, Davis, and a Ph.D and M.A. in Statistics from the University of California, Berkeley. He has been awarded eight patents and has published over 60 papers in data science, statistics and computer science.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="bio-social">
+          <a href="https://journalism.columbia.edu/faculty/mark-hansen" target="_blank" rel="noopener noreferrer"><i class="fa fa-university"></i> Faculty Profile</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="kontos" tabindex="-1" role="dialog" aria-labelledby="bioModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog modal-lg" role="document">
+    <div class="modal-content bio-modal">
+      <div class="modal-header">
+        <div class="bio-header">
+          <img src="assets/img/teacher/DespinaKontos.jpg" alt="Despina Kontos" class="bio-image">
+          <div class="bio-title">
+            <h5 class="modal-title" id="bioModalTitle">DESPINA KONTOS</h5>
+            <span class="bio-position">Professor, Radiological Sciences, Columbia University Irving Medical Center</span>
+          </div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="bio-content">
+          <p><b>Despina Kontos, PhD</b> is a computer scientist with expertise in artificial intelligence, machine learning, and big data analytics for multi-modality imaging data. She is the chief research information officer for Columbia University Irving Medical Center (CUIMC). She is also the vice chair of artificial intelligence and data science research in the Department of Radiology at CUIMC and director of biomarker imaging at NewYork-Presbyterian Hospital—with additional appointments in the Departments of Biomedical Informatics and Biomedical Engineering.</p>
+          
+          <p>Dr. Kontos is the founding director of Columbia University's Center for Innovation in Imaging Biomarkers and Integrated Diagnostics (CIMBID), a multidisciplinary center dedicated to developing and integrating quantitative imaging and non-imaging biomarkers for personalized disease prediction, particularly in cancer.</p>
+          
+          <div class="bio-highlight">
+            <i class="fa fa-flask"></i>
+            <p>Dr. Kontos has made seminal contributions to the leveraging of artificial intelligence tools for risk prediction in breast and lung cancer through innovative computational methodologies.</p>
+          </div>
+          
+          <p>Dr. Kontos has made seminal contributions to the leveraging of artificial intelligence tools for risk prediction in breast and lung cancer. Her research program focuses on investigating the role of imaging as a quantitative biomarker for improving cancer screening, prognostication, and treatment. She has developed innovative computational methodologies that have enabled the investigation of novel cancer phenotypic biomarkers via imaging, and has translated these biomarkers through extensive clinical and epidemiologic studies to answer important research questions for personalizing cancer care.</p>
+          
+          <p>With a primary focus on breast cancer, her work has contributed to a fundamental transition in the interpretation of breast cancer images, by showing that imaging data can be mined to extract sophisticated phenotypic signatures with independent diagnostic, prognostic, and predictive value. Her lab is also pursuing related research in lung cancers, specifically on evaluating the integration of CT radiomic features with liquid biopsy data to characterize lung tumor heterogeneity for predicting response to targeted therapy and immunotherapy.</p>
+          
+          <p>Dr. Kontos is the recipient of numerous grants from both federal agencies and private foundations, including the National Institutes of Health (NIH), the Department of Defense (DOD), the American Cancer Society (ACS), and the Radiological Society of North America (RSNA). She is the author of more than 100 publications in high-impact journals, and her lectures have gained national recognition.</p>
+          
+          <p>Dr. Kontos studied engineering as an undergraduate at the University of Patras in Greece. She received her PhD in computer and information sciences from Temple University in Philadelphia, followed by postdoc training in radiology at the University of Pennsylvania. She has certificates in Biostatistics and Epidemiology from the University of Pennsylvania; Cancer Biology and Targeted Therapeutics from Harvard University; and AI for Decision Making: Business Strategies and Applications from the Wharton School of Business. Dr. Kontos is a member of the RSNA Research & Education Foundation Fund Development Committee.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="bio-social">
+          <a href="https://www.columbiaradiology.org/research-labs/computational-biomarker-imaging-group-cbig" target="_blank" rel="noopener noreferrer"><i class="fa fa-flask"></i> Research Lab</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="miller" tabindex="-1" role="dialog" aria-labelledby="bioModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog modal-lg" role="document">
+    <div class="modal-content bio-modal">
+      <div class="modal-header">
+        <div class="bio-header">
+          <img src="assets/img/teacher/ReginaldMiller.jpeg" alt="Reginald Miller" class="bio-image">
+          <div class="bio-title">
+            <h5 class="modal-title" id="bioModalTitle">REGINALD MILLER</h5>
+            <span class="bio-position">Dean for Research Operations and Infrastructure, Icahn School of Medicine at Mount Sinai</span>
+          </div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="bio-content">
+          <p><b>Dr. Reginald W. Miller</b> serves as the Dean for Research Operations and Infrastructure and is responsible for the oversight of ISMMS Biosafety, Environmental Health and Safety, Laboratory Safety including the Select Agents and Toxins Program (Operations), Core Facilities and Shared Resources (Vivarium) as well as Basic Science Laboratory Infrastructure (Infrastructure).</p>
+          
+          <div class="bio-highlight">
+            <i class="fa fa-lightbulb-o"></i>
+          <p>Dr. Miller is also the Senior Research Integrity Officer (RIO) for the Mount Sinai Health System. In this role, he is responsible for ensuring that a program on the Responsible Conduct of Research is in place, which includes conducting reviews of allegations of research misconduct as necessary to help students and faculty understand the regulatory and institutional expectations placed upon scientists in conducting research.</p>
+        </div>
+          
+          <p>He is also the Chief Export Controls Officer (ECO) for the Mount Sinai Health System. Responsibilities within this role include ensuring government guidance and policies for research compliance are followed throughout Mount Sinai.</p>
+          
+          <p>Dr. Miller's other roles at Mount Sinai included serving as the Co-Chair for the Diversity in Biomedical Research Council, and Professor roles for Comparative Medicine and Surgery as well as for Environmental Medical and Public Health.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="bio-social">
+          <a href="https://profiles.mountsinai.org/reginald-w-miller" target="_blank" rel="noopener noreferrer"><i class="fa fa-university"></i> Faculty Profile</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="motter" tabindex="-1" role="dialog" aria-labelledby="bioModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog modal-lg" role="document">
+    <div class="modal-content bio-modal">
+      <div class="modal-header">
+        <div class="bio-header">
+          <img src="assets/img/teacher/KaiaMotter.jpg" alt="Kaia Motter" class="bio-image">
+          <div class="bio-title">
+            <h5 class="modal-title" id="bioModalTitle">KAIA MOTTER</h5>
+            <span class="bio-position">Head of Academic Affairs, North America, Springer Nature</span>
+          </div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="bio-content">
+          <p><b>Kaia Motter</b> is Head of Academic Affairs, North America at Springer Nature where she leads academic affairs activities in the US and Canada, building relationships and collaborating with funders, institutions, and other non-profit organizations in the region.</p>
+          
+          <div class="bio-highlight">
+            <i class="fa fa-lightbulb-o"></i>
+            <p>Motter's work focuses on open science development, policy, and research assessment reform with particular attention to research integrity and AI impacts.</p>
+          </div>
+          
+          <p>Kaia has a background in publishing, having held editorial positions at Elsevier and Wiley. In recent years, her work has been centered on open science development, policy, and outreach with a topical focus on research assessment reform, research integrity, AI, and other issues impacting the research community.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="bio-social">
+          <a href="https://www.linkedin.com/in/kaia-motter-16752211" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i> LinkedIn Profile</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="yamamoto" tabindex="-1" role="dialog" aria-labelledby="bioModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog modal-lg" role="document">
+    <div class="modal-content bio-modal">
+      <div class="modal-header">
+        <div class="bio-header">
+          <img src="assets/img/teacher/AiYamamoto.jpg" alt="Ai Yamamoto" class="bio-image">
+          <div class="bio-title">
+            <h5 class="modal-title" id="bioModalTitle">AI YAMAMOTO</h5>
+            <span class="bio-position">Professor, Neurology, Pathology & Cell Biology, Columbia University</span>
+          </div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="bio-content">
+          <p><b>Ai Yamamoto, PhD</b> is an Associate Professor in the Departments of Neurology and Pathology and Cell Biology. Dr. Yamamoto became faculty in 2008, after completing her postdoctoral work with Dr. James E. Rothman, and her dissertation work with Dr. Rene Hen.</p>
+          
+          <div class="bio-highlight">
+            <i class="fa fa-flask"></i>
+            <p>Dr. Yamamoto's research focuses on how the cellular pathway autophagy impacts the developing and aging brain, with implications for neurological disorders.</p>
+          </div>
+          
+          <p>Dr. Yamamoto's work focuses on the cellular events that impact neurological disorders, with a particular focus on how the cellular pathway autophagy impacts the developing and aging brain. Dr. Yamamoto has co-directed and continues to teach for BCMBII (Lectures on Autophagy), and co-directs with Dr. Hemali Phatnani a course on Management Skills and Leadership in Science.</p>
+          
+          <p>Dr. Yamamoto serves as a member of the MSTP Advisory Committee at Columbia University, as well as on several scientific boards including the Hereditary Disease Foundation and the Project ALS. She has served on several NIH study sections, and is currently a permanent member of Cellular Dysfunction in Neurodegeneration (CDIN). She has been a co-director of the Neurobiology and Behavior Graduate program since 2018.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="bio-social">
+          <a href="https://www.aiyamamoto-lab.org/" target="_blank" rel="noopener noreferrer"><i class="fa fa-flask"></i> Lab Website</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="wing" tabindex="-1" role="dialog" aria-labelledby="bioModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog modal-lg" role="document">
+    <div class="modal-content bio-modal">
+      <div class="modal-header">
+        <div class="bio-header">
+          <img src="assets/img/teacher/JeanetteWing.jpeg" alt="Jeannette M. Wing" class="bio-image">
+          <div class="bio-title">
+            <h5 class="modal-title" id="bioModalTitle">JEANNETTE M. WING</h5>
+            <span class="bio-position">Executive Vice President for Research, Columbia University</span>
+          </div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="bio-content">
+          <p><b>Jeannette M. Wing</b> is the Executive Vice President for Research at Columbia University and Professor of Computer Science. In her EVPR role, she has overall responsibility for the University's research enterprise at all New York locations and internationally. The New York locations include the Morningside and Manhattanville campuses, Columbia University Irving Medical Center, Lamont-Doherty Earth Observatory, and Nevis Laboratories. She joined Columbia in 2017 as the inaugural Avanessians Director of the Data Science Institute.</p>
+          
+          <div class="bio-highlight">
+            <i class="fa fa-lightbulb-o"></i>
+            <p>Dr. Wing's 2006 seminal essay, "Computational Thinking," is credited with helping to establish the centrality of computer science to problem-solving in fields where previously it had not been embraced, influencing K-12 and university curricula worldwide.</p>
+          </div>
+          
+          <p>Prior to Columbia, Dr. Wing was Corporate Vice President of Microsoft Research, served on the faculty and as department head in computer science at Carnegie Mellon University, and served as Assistant Director for Computer and Information Science and Engineering at the National Science Foundation.</p>
+          
+          <div class="bio-publications">
+            <h6><i class="fa fa-file-text-o"></i> Research Focus</h6>
+            <ul>
+              <li>Trustworthy AI</li>
+              <li>Security and Privacy</li>
+              <li>Specification and Verification</li>
+              <li>Concurrent and Distributed Systems</li>
+              <li>Programming Languages and Software Engineering</li>
+            </ul>
+          </div>
+          
+          <p>Dr. Wing's research contributions have been in the areas of trustworthy AI, security and privacy, specification and verification, concurrent and distributed systems, programming languages, and software engineering. Her 2006 seminal essay, titled "Computational Thinking," is credited with helping to establish the centrality of computer science to problem-solving in fields where previously it had not been embraced, and thereby influencing K-12 and university curricula worldwide.</p>
+          
+          <p>She is a Fellow of the American Academy of Arts and Sciences, American Association for the Advancement of Science, the Association for Computing Machinery (ACM), and the Institute of Electrical and Electronic Engineers. She received distinguished service awards from the ACM and the Computing Research Association and an honorary doctorate degree from Linköping University, Sweden. She earned her bachelor's, master's, and doctoral degrees in computer science, all from the Massachusetts Institute of Technology.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="bio-social">
+          <a href="https://datascience.columbia.edu/people/jeannette-m-wing/" target="_blank" rel="noopener noreferrer"><i class="fa fa-university"></i> Faculty Profile</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="narasimhan" tabindex="-1" role="dialog" aria-labelledby="bioModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog modal-lg" role="document">
+    <div class="modal-content bio-modal">
+      <div class="modal-header">
+        <div class="bio-header">
+          <img src="assets/img/teacher/SriDeviNarasimhan.jpeg" alt="Sri Devi Narasimhan" class="bio-image">
+          <div class="bio-title">
+            <h5 class="modal-title" id="bioModalTitle">SRI DEVI NARASIMHAN</h5>
+            <span class="bio-position">Deputy Editor, Cell</span>
+          </div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="bio-content">
+          <p><b>Sri Narasimhan</b> is Deputy Editor at Cell where she leads journal strategy, inclusion and diversity efforts as well as publication of microbiology, immunology and metabolism content. She also oversees Cell's connection with Cell Press and manages cross-journal communication and collaboration initiatives in the organization.</p>
+          
+          <div class="bio-highlight">
+            <i class="fa fa-university"></i>
+            <p>Sri trained in microbiology, molecular genetics and metabolism at the National University of Singapore, UMASS Medical School and Harvard Medical School.</p>
+          </div>
+          
+          <p>Sri trained in microbiology, molecular genetics and metabolism at the National University of Singapore, UMASS Medical School and Harvard Medical School before joining Cell Press in 2012. She is based in Cambridge, Massachusetts.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="bio-social">
+          <a href="https://www.cell.com/cell/editors-and-staff" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link"></i> Cell Editorial Staff</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="lustig" tabindex="-1" role="dialog" aria-labelledby="bioModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog modal-lg" role="document">
+    <div class="modal-content bio-modal">
+      <div class="modal-header">
+        <div class="bio-header">
+          <img src="assets/img/teacher/LarryLustig.png" alt="Lawrence Lustig" class="bio-image">
+          <div class="bio-title">
+            <h5 class="modal-title" id="bioModalTitle">LAWRENCE LUSTIG</h5>
+            <span class="bio-position">Chair, Otolaryngology, Columbia University</span>
+          </div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="bio-content">
+          <p><b>Lawrence Lustig, MD</b> is an Otolaryngologist who specializes in Otology, Neurotology and Skull Base Surgery. Dr Lustig grew up in Northern California, and completed his undergraduate studies at the University of California at Berkeley. He graduated from the University of California at San Francisco (UCSF) School of Medicine, where he also completed his Otolaryngology residency. After residency, Dr Lustig completed his Neurotology and Skull Base Surgery Fellowship at Johns Hopkins University and remained on staff at Johns Hopkins through 2004. In 2004 he was recruited back to UCSF to lead the Division of Otology and Neurotology in the Otolaryngology Department. In 2014, he was recruited to Columbia University and New York Presbyterian Hospital where he practices today as the Howard W. Smith Professor and Chair of the Department of Otolaryngology.</p>
+          
+          <div class="bio-highlight">
+            <i class="fa fa-flask"></i>
+            <p>Dr. Lustig's interdisciplinary research has helped pioneer cochlear gene therapy for genetic forms of hearing loss, including leading investigation for the Otoferlin gene therapy trial.</p>
+          </div>
+          
+          <p>Dr. Lustig's interdisciplinary research has helped pioneer cochlear gene therapy for genetic forms of hearing loss. He is also one of the lead investigators for the Otoferlin gene therapy trial sponsored by Regeneron. Prior work in his lab has included studies on cochlear bone development and how the material properties of bone enclosing the inner ear contribute to hearing. Dr. Lustig is considered one of the foremost authorities on cochlear implants in the United States.</p>
+          
+          <p>Dr. Lustig has published more than 125 articles in peer-reviewed journals, as well as numerous book chapters. He has co-edited several textbooks, including "Clinical Neurotology: Diagnosing and Managing Disorders of Hearing, Balance and the Facial Nerve" and "Disorders of the Vestibular System." He currently serves as the Editor-in-Chief of Otology & Neurotology, the foremost medical journal in his subspeciality.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="bio-social">
+          <a href="https://www.linkedin.com/in/lawrence-lustig-9a84ab6" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i> LinkedIn Profile</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Content End -->
 
     <!-- Speakers Section Start -->
     <section id="speakers" class="section">
@@ -1478,70 +1741,137 @@
 <!-- Meet Our Team Section End -->
 
 <!-- Team Member Modals Start -->
-<div class="modal fade" id="team-member1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+<!-- Team Member Modals Start -->
+<div class="modal fade" id="team-member1" tabindex="-1" role="dialog" aria-labelledby="bioModalTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog modal-lg" role="document">
-    <div class="modal-content">
+    <div class="modal-content bio-modal">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">NAOMI SCHRAG</h5>
+        <div class="bio-header">
+          <img src="assets/img/teacher/NaomiSchrag.png" alt="Naomi Schrag" class="bio-image">
+          <div class="bio-title">
+            <h5 class="modal-title" id="bioModalTitle">NAOMI SCHRAG</h5>
+            <span class="bio-position">VP for Research Compliance, Training, and Policy, Columbia University</span>
+          </div>
+        </div>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <p>
-          <b>Naomi Schrag</b> is the Vice President for Research Compliance, Training, and Policy in the Office of the Executive Vice President for Research, and the University's Research Integrity Officer (RIO). She oversees work on issues such as research misconduct, conflict-of-interest and international research compliance, and collaborates closely with other offices across the University to develop integrated approaches to compliance and training.
-              <br><br>
-              Before joining Columbia in January 2006, Ms. Schrag practiced law for nine years, focusing on regulatory compliance and litigation involving biomedical research, with clients including pharmaceutical companies and not-for-profit organizations. Ms. Schrag also clerked in the Court of Appeals for the Second Circuit. Ms. Schrag graduated from New York University School of Law in 1995. Before entering law school, she worked on an oral history of the Holocaust for the Museum of Jewish Heritage.
-        </p>
+        <div class="bio-content">
+          <p><b>Naomi Schrag</b> is the Vice President for Research Compliance, Training, and Policy in the Office of the Executive Vice President for Research, and the University's Research Integrity Officer (RIO). She oversees work on issues such as research misconduct, conflict-of-interest and international research compliance, and collaborates closely with other offices across the University to develop integrated approaches to compliance and training.</p>
+          
+          <div class="bio-highlight">
+            <i class="fa fa-gavel"></i>
+            <p>As the University's Research Integrity Officer, Ms. Schrag promotes best practices in research and helps ensure Columbia's compliance with regulations and ethical standards.</p>
+          </div>
+          
+          <p>Before joining Columbia in January 2006, Ms. Schrag practiced law for nine years, focusing on regulatory compliance and litigation involving biomedical research, with clients including pharmaceutical companies and not-for-profit organizations. Ms. Schrag also clerked in the Court of Appeals for the Second Circuit. Ms. Schrag graduated from New York University School of Law in 1995. Before entering law school, she worked on an oral history of the Holocaust for the Museum of Jewish Heritage.</p>
+        </div>
       </div>
       <div class="modal-footer">
-        <!-- Modal footer can remain empty or include additional buttons if needed -->
+        <div class="bio-social">
+          <a href="https://research.columbia.edu/directory/naomi-schrag" target="_blank" rel="noopener noreferrer"><i class="fa fa-university"></i> University Profile</a>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="modal fade" id="team-member2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+<div class="modal fade" id="team-member2" tabindex="-1" role="dialog" aria-labelledby="bioModalTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog modal-lg" role="document">
-    <div class="modal-content">
+    <div class="modal-content bio-modal">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">ANDERSON SMITH</h5>
+        <div class="bio-header">
+          <img src="assets/img/AndersonSmith.jpg" alt="Anderson Smith" class="bio-image">
+          <div class="bio-title">
+            <h5 class="modal-title" id="bioModalTitle">ANDERSON SMITH</h5>
+            <span class="bio-position">Assistant Director for Research Compliance Education, Columbia University</span>
+          </div>
+        </div>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <p>
-          <b>Anderson Smith</b> is the Assistant Director for Research Compliance Education for the Office of Research Compliance and Training. His work focuses on creating educational programs on research compliance and research ethics for the Columbia research community, including faculty and staff, students, and post-doctoral research fellows.
-
-          <br><bt><br>Dr. Smith has conducted seminars and lectures at various conferences, including the American Educational Research Association (AERA), National Association of Foreign Student Advisers (NAFSA), and National Council of Teachers of English (NCTE), around literacy and metacognition. His research focused on the effects of literature when used in service to people with criminal conviction histories post-incarceration. He has also taught creative writing and spoken-word poetry in both medium and maximum-security prisons in New York. Dr. Smith earned his Ph.D. in English Education from Teachers College, Columbia University, where he also earned a Master's in Philosophy and a Master's in Education for the teaching of English. He received his Master's in Fine Arts for Creative Writing from Manhattanville College.
-
-
-        </p>
+        <div class="bio-content">
+          <h6 class="bio-section-title"><i class="fa fa-briefcase"></i> Roles and Responsibilities</h6>
+          <p><b>Dr. Anderson Smith</b> is the Assistant Director for Research Compliance Education for the Office of Research Compliance and Training. His work focuses on creating educational programs on research compliance and research ethics for the Columbia research community, including faculty and staff, students, and post-doctoral research fellows.</p>
+          
+          <div class="bio-highlight">
+            <i class="fa fa-book"></i>
+            <p>Dr. Smith has taught creative writing and spoken-word poetry in both medium and maximum-security prisons in New York, leveraging literature as a tool for rehabilitation and personal growth.</p>
+          </div>
+          
+          <h6 class="bio-section-title"><i class="fa fa-graduation-cap"></i> Academic Background</h6>
+          <p>Dr. Smith earned his Ph.D. in English Education from Teachers College, Columbia University, where he also earned a Master's in Philosophy and a Master's in Education for the teaching of English. He received his Master's in Fine Arts for Creative Writing from Manhattanville College.</p>
+          
+          <h6 class="bio-section-title"><i class="fa fa-lightbulb-o"></i> Research and Presentations</h6>
+          <p>Dr. Smith has conducted seminars and lectures at various conferences, including the American Educational Research Association (AERA), National Association of Foreign Student Advisers (NAFSA), and National Council of Teachers of English (NCTE), around literacy and metacognition. His research focused on the effects of literature when used in service to people with criminal conviction histories post-incarceration.</p>
+          
+          <div class="bio-skills">
+            <h6><i class="fa fa-certificate"></i> Areas of Expertise</h6>
+            <div class="skill-tags">
+              <span class="skill-tag">Research Ethics</span>
+              <span class="skill-tag">Compliance Education</span>
+              <span class="skill-tag">English Education</span>
+              <span class="skill-tag">Creative Writing</span>
+              <span class="skill-tag">Literacy</span>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="modal-footer">
-        <!-- Modal footer can remain empty or include additional buttons if needed -->
+        <div class="bio-social">
+          <a href="https://research.columbia.edu/directory/anderson-p-smith" target="_blank" rel="noopener noreferrer"><i class="fa fa-university"></i> University Profile</a>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="modal fade" id="team-member3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+<div class="modal fade" id="team-member3" tabindex="-1" role="dialog" aria-labelledby="bioModalTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog modal-lg" role="document">
-    <div class="modal-content">
+    <div class="modal-content bio-modal">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">ROGER LEFORT</h5>
+        <div class="bio-header">
+          <img src="assets/img/RogerLefort.jpeg" alt="Roger Lefort" class="bio-image">
+          <div class="bio-title">
+            <h5 class="modal-title" id="bioModalTitle">ROGER LEFORT</h5>
+            <span class="bio-position">Assistant Director for Research Integrity and Compliance, Columbia University</span>
+          </div>
+        </div>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <p>
-          <b>Roger Lefort</b> is the Assistant Director for Research Integrity and Compliance. His work focuses on promoting research and data integrity through various workshops and trainings, research group consultations and development of resources to aid in the conduct of research. He also works on matters concerning conflict-of-interest and research misconduct.
-        </p>
+        <div class="bio-content">
+          <h6 class="bio-section-title"><i class="fa fa-briefcase"></i> Roles and Responsibilities</h6>
+          <p><b>Dr. Lefort</b> is the Assistant Director for Research Integrity and Compliance. His work focuses on promoting research and data integrity through various workshops and trainings, research group consultations and development of resources to aid in the conduct of research. He also works on matters concerning conflict-of-interest and research misconduct.</p>
+          
+          <div class="bio-highlight">
+            <i class="fa fa-flask"></i>
+            <p>Before joining the Office of Research Compliance and Training, Dr. Lefort was an Assistant Professor in the Department of Pathology and Cell Biology at Columbia University Irving Medical Center, where he researched neurodegeneration and synaptic dysfunction in neurological diseases.</p>
+          </div>
+          
+          <h6 class="bio-section-title"><i class="fa fa-graduation-cap"></i> Academic Background</h6>
+          <p>Dr. Lefort received his PhD in Molecular Medicine from Columbia University Irving Medical Center in 2011. For six years, his research focused on the molecular mechanism of neurodegeneration and synaptic dysfunction in neurological diseases, including Alzheimer's disease and Angelman syndrome.</p>
+          
+          <div class="bio-skills">
+            <h6><i class="fa fa-code"></i> Technical Skills</h6>
+            <div class="skill-tags">
+              <span class="skill-tag">Data Science</span>
+              <span class="skill-tag">Data Visualization</span>
+              <span class="skill-tag">Python Programming</span>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="modal-footer">
-        <!-- Modal footer can remain empty or include additional buttons if needed -->
+        <div class="bio-social">
+          <a href="https://research.columbia.edu/directory/roger-lefort" target="_blank" rel="noopener noreferrer"><i class="fa fa-university"></i> University Profile</a>
+        </div>
       </div>
     </div>
   </div>
